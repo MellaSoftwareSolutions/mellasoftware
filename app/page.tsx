@@ -13,7 +13,22 @@ export default function Page() {
   return <main id="top">
     <header className="site-header"><a href="#top" className="brand">Mella<span>.</span></a><nav aria-label="Primary navigation"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav><Link href="#contact" className="header-cta">Start a project</Link></header>
 
-    <section className="hero section-shell"><div className="hero-stamp">MELLA<br />SOFTWARE<br />SOLUTIONS<br /><span>EST. 2026</span></div><div className="hero-copy"><p className="eyebrow">Independent software studio · Addis Ababa</p><h1>Make the<br /><em>next thing.</em></h1><p className="hero-lede">We design, build, and run software products for people with something useful to put into the world.</p><div className="hero-actions"><a className="button button-primary" href="#contact">Start a project <Arrow /></a><Link href="#work">See our work</Link></div></div><div className="hero-orbit" aria-hidden="true"><span>IDEA</span><i /><b>BUILD</b><i /><span>LIVE</span></div></section>
+    <section className="hero section-shell">
+      <div className="hero-layout">
+        <div className="hero-copy">
+          <p className="eyebrow">Independent software studio · Addis Ababa</p>
+          <h1>Make the<br /><em>next thing.</em></h1>
+          <p className="hero-lede">We design, build, and run software products for people with something useful to put into the world.</p>
+          <div className="hero-actions">
+            <a className="button button-primary" href="#contact">Start a project <Arrow /></a>
+            <Link href="#work">See our work</Link>
+          </div>
+        </div>
+        <div className="hero-visual">
+          <img src="/blue icon.svg" alt="Mella Icon" className="hero-icon" />
+        </div>
+      </div>
+    </section>
 
     <section id="work" className="work-section section-shell"><div className="section-intro"><p className="eyebrow">Selected work / 04</p><h2>Things we&apos;ve<br /><em>made useful.</em></h2><p>From first thought to daily tool.</p></div><div className="work-grid">{work.map(([name, meta, copy], i) => <article className={`work-item item-${i + 1}`} key={name}><div className="project-visual"><span>0{i + 1}</span><div className="visual-mark">{i === 0 ? 'A' : i === 1 ? '＋' : i === 2 ? '◌' : '↗'}</div></div><p className="card-meta">{meta}</p><h3>{name}</h3><p>{copy}</p></article>)}</div><Link href="#contact">View all work</Link></section>
 
