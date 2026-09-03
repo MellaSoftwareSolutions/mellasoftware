@@ -8,6 +8,14 @@ const sora = Sora({ subsets: ['latin'], variable: '--font-sora' })
 export const metadata: Metadata = {
   title: 'Mella — Software that ships.',
   description: 'Mella designs, builds, and runs software products for ambitious businesses.',
+  icons: {
+    icon: [
+      { url: '/blue icon.svg', type: 'image/svg+xml' },
+      { url: '/icon-dark-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    shortcut: '/blue icon.svg',
+    apple: '/apple-icon.png',
+  },
 }
 
 export const viewport: Viewport = {
