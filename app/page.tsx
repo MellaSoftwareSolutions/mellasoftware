@@ -678,8 +678,17 @@ export default function Page() {
             </a>
           </div>
 
-          <div className="pt-12 text-sm text-[var(--text-secondary)] font-mono leading-loose">
+          <div className="pt-12 text-sm text-[var(--text-secondary)] font-mono leading-loose space-y-2">
             <strong className="text-[var(--text-primary)] text-base block font-sans">hello@mellasoftware.com</strong>
+            <div className="flex flex-wrap items-center justify-center gap-4 text-base font-sans font-medium text-[var(--bright-blue)] pt-1 pb-1">
+              <a href="tel:+251944741857" className="hover:underline">
+                +251 944 741 857
+              </a>
+              <span className="text-[var(--text-muted)]">·</span>
+              <a href="tel:+251713184474" className="hover:underline">
+                +251 713 184 474
+              </a>
+            </div>
             <span>Addis Ababa, Ethiopia</span><br />
             <span>Monday–Friday · 09:00–18:00 EAT</span>
           </div>
@@ -704,8 +713,12 @@ export default function Page() {
             <a href="#contact" className="hover:text-[var(--text-primary)] transition-colors">Contact</a>
           </nav>
 
-          <div className="space-y-1 text-right md:text-right">
-            <div>Privacy · Terms</div>
+          <div className="space-y-1 text-left md:text-right">
+            <div className="flex flex-wrap items-center gap-2 justify-start md:justify-end text-xs font-mono text-[var(--text-secondary)]">
+              <a href="tel:+251944741857" className="hover:text-[var(--bright-blue)] transition-colors">+251 944 741 857</a>
+              <span>·</span>
+              <a href="tel:+251713184474" className="hover:text-[var(--bright-blue)] transition-colors">+251 713 184 474</a>
+            </div>
             <div>© 2026 Mella Software Solutions PLC</div>
           </div>
         </div>
