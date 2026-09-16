@@ -1,0 +1,29 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1237A6"/>
+      <stop offset="50%" stop-color="#2563FF"/>
+      <stop offset="100%" stop-color="#0F2D8D"/>
+    </linearGradient>
+    <linearGradient id="glowOverlay" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4D7CFF" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#2563FF" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="450" rx="16" fill="url(#blueGrad)"/>
+
+  <!-- Glowing Abstract Waves & Curves -->
+  <path d="M-100 300C150 180 350 420 600 240C720 150 850 200 950 120" stroke="url(#glowOverlay)" stroke-width="40" stroke-linecap="round" filter="blur(20px)" opacity="0.7"/>
+  <path d="M-50 120C200 250 450 100 700 280C800 350 900 290 1000 380" stroke="#4D7CFF" stroke-width="16" stroke-linecap="round" opacity="0.4"/>
+  <circle cx="680" cy="100" r="140" fill="#4D7CFF" opacity="0.25" filter="blur(40px)"/>
+  <circle cx="120" cy="360" r="160" fill="#1237A6" opacity="0.5" filter="blur(50px)"/>
+
+  <!-- Subtle Glass Overlay Grid Lines -->
+  <rect x="30" y="30" width="740" height="390" rx="12" stroke="rgba(255,255,255,0.15)" stroke-width="1" fill="none"/>
+  <line x1="30" y1="120" x2="770" y2="120" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <line x1="30" y1="240" x2="770" y2="240" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <line x1="30" y1="360" x2="770" y2="360" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+</svg>
+

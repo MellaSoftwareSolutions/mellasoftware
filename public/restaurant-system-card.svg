@@ -1,0 +1,104 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="restBg" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A0F1D"/>
+      <stop offset="50%" stop-color="#101934"/>
+      <stop offset="100%" stop-color="#060B16"/>
+    </linearGradient>
+    <linearGradient id="kotGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563FF"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="restCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142144"/>
+      <stop offset="100%" stop-color="#0B1328"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#restBg)"/>
+
+  <circle cx="680" cy="90" r="160" fill="#2563FF" opacity="0.16" filter="blur(60px)"/>
+  <circle cx="120" cy="380" r="150" fill="#38BDF8" opacity="0.14" filter="blur(50px)"/>
+
+  <!-- Top bar -->
+  <g transform="translate(30, 24)">
+    <rect width="740" height="48" rx="10" fill="#111B38" stroke="rgba(37,99,255,0.25)" stroke-width="1"/>
+    <text x="24" y="29" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="14">POS KITCHEN DISPATCH &amp; ORDERS</text>
+    <rect x="580" y="10" width="144" height="28" rx="14" fill="rgba(37,99,255,0.18)" stroke="#38BDF8" stroke-width="1"/>
+    <text x="596" y="28" fill="#38BDF8" font-family="sans-serif" font-weight="600" font-size="11">● 14 LIVE TABLES</text>
+  </g>
+
+  <!-- Left Main Kitchen Order Ticket (KOT) Cards Grid -->
+  <g transform="translate(30, 88)">
+    <rect width="470" height="332" rx="14" fill="url(#restCard)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="24" y="36" fill="#94A3B8" font-family="sans-serif" font-size="11" font-weight="700">KITCHEN DISPLAY SYSTEM (KDS)</text>
+
+    <!-- Ticket 1 -->
+    <g transform="translate(24, 52)">
+      <rect width="200" height="252" rx="10" fill="#0A1021" stroke="rgba(56,189,248,0.3)" stroke-width="1"/>
+      <rect width="200" height="36" rx="10" fill="url(#kotGlow)"/>
+      <text x="14" y="23" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="13">TABLE 04 · #1048</text>
+      <text x="140" y="23" fill="#FFFFFF" font-family="sans-serif" font-weight="600" font-size="11">04:12</text>
+
+      <text x="14" y="60" fill="#E2E8F0" font-family="sans-serif" font-size="12" font-weight="700">2x Chef Special Burger</text>
+      <text x="24" y="76" fill="#94A3B8" font-family="sans-serif" font-size="11">+ Extra Cheese, No Onion</text>
+
+      <text x="14" y="104" fill="#E2E8F0" font-family="sans-serif" font-size="12" font-weight="700">1x Truffle Fries</text>
+      <text x="14" y="132" fill="#E2E8F0" font-family="sans-serif" font-size="12" font-weight="700">2x Iced Espresso</text>
+
+      <line x1="14" y1="180" x2="186" y2="180" stroke="rgba(255,255,255,0.08)"/>
+      <rect x="14" y="196" width="172" height="36" rx="8" fill="#2563FF"/>
+      <text x="56" y="219" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="12">Mark Ready</text>
+    </g>
+
+    <!-- Ticket 2 -->
+    <g transform="translate(244, 52)">
+      <rect width="200" height="252" rx="10" fill="#0A1021" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <rect width="200" height="36" rx="10" fill="#1A294D"/>
+      <text x="14" y="23" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="13">TABLE 08 · #1049</text>
+      <text x="140" y="23" fill="#94A3B8" font-family="sans-serif" font-weight="600" font-size="11">01:45</text>
+
+      <text x="14" y="60" fill="#E2E8F0" font-family="sans-serif" font-size="12" font-weight="700">1x Woodfired Pizza</text>
+      <text x="24" y="76" fill="#94A3B8" font-family="sans-serif" font-size="11">+ Extra Basil</text>
+
+      <text x="14" y="104" fill="#E2E8F0" font-family="sans-serif" font-size="12" font-weight="700">2x Sparkling Water</text>
+
+      <line x1="14" y1="180" x2="186" y2="180" stroke="rgba(255,255,255,0.08)"/>
+      <rect x="14" y="196" width="172" height="36" rx="8" fill="#1E293B"/>
+      <text x="62" y="219" fill="#94A3B8" font-family="sans-serif" font-weight="700" font-size="12">Preparing</text>
+    </g>
+  </g>
+
+  <!-- Right Side POS Daily Revenue & Table Floor Map -->
+  <g transform="translate(520, 88)">
+    <rect width="250" height="156" rx="14" fill="url(#restCard)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="20" y="32" fill="#94A3B8" font-family="sans-serif" font-size="11" font-weight="700">TODAY'S POS SALES</text>
+    <text x="20" y="70" fill="#FFFFFF" font-family="sans-serif" font-size="32" font-weight="800">$4,890<tspan font-size="16" fill="#38BDF8">.50</tspan></text>
+    <rect x="20" y="96" width="210" height="32" rx="8" fill="#0A1021"/>
+    <text x="32" y="117" fill="#60A5FA" font-family="sans-serif" font-size="11">Avg Ticket: <tspan fill="#FFFFFF" font-weight="700">$68.40</tspan> · 142 Orders</text>
+
+    <!-- Floor Layout Mini Grid -->
+    <g transform="translate(0, 176)">
+      <rect width="250" height="156" rx="14" fill="url(#restCard)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <text x="20" y="32" fill="#94A3B8" font-family="sans-serif" font-size="11" font-weight="700">FLOOR TABLE MAP</text>
+      
+      <circle cx="45" cy="70" r="18" fill="#2563FF"/>
+      <text x="45" y="74" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="11" text-anchor="middle">T1</text>
+
+      <circle cx="105" cy="70" r="18" fill="#38BDF8"/>
+      <text x="105" y="74" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="11" text-anchor="middle">T2</text>
+
+      <circle cx="165" cy="70" r="18" fill="#1E293B"/>
+      <text x="165" y="74" fill="#94A3B8" font-family="sans-serif" font-weight="700" font-size="11" text-anchor="middle">T3</text>
+
+      <circle cx="45" cy="120" r="18" fill="#2563FF"/>
+      <text x="45" y="124" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="11" text-anchor="middle">T4</text>
+
+      <circle cx="105" cy="120" r="18" fill="#1E293B"/>
+      <text x="105" y="124" fill="#94A3B8" font-family="sans-serif" font-weight="700" font-size="11" text-anchor="middle">T5</text>
+
+      <circle cx="165" cy="120" r="18" fill="#38BDF8"/>
+      <text x="165" y="124" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="11" text-anchor="middle">T6</text>
+    </g>
+  </g>
+</svg>
