@@ -16,41 +16,10 @@ function ArrowUpRight({ className = "w-4 h-4 inline-block ml-1" }: { className?:
   )
 }
 
-function SunIcon({ className = "w-4 h-4" }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-    </svg>
-  )
-}
-
-function MoonIcon({ className = "w-4 h-4" }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-    </svg>
-  )
-}
-
 export default function Page() {
-  const [theme, setTheme] = useState<'dark' | 'light'>('dark')
-
   useEffect(() => {
-    const savedTheme = localStorage.getItem('mella-theme') as 'dark' | 'light' | null
-    if (savedTheme) {
-      setTheme(savedTheme)
-      document.documentElement.setAttribute('data-theme', savedTheme)
-    } else {
-      document.documentElement.setAttribute('data-theme', 'dark')
-    }
+    document.documentElement.setAttribute('data-theme', 'dark')
   }, [])
-
-  const toggleTheme = () => {
-    const nextTheme = theme === 'dark' ? 'light' : 'dark'
-    setTheme(nextTheme)
-    document.documentElement.setAttribute('data-theme', nextTheme)
-    localStorage.setItem('mella-theme', nextTheme)
-  }
 
   const workItems = [
     {
@@ -218,53 +187,44 @@ export default function Page() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <button 
-            onClick={toggleTheme} 
-            className="theme-toggle-btn"
-            aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-            title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-          >
-            {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
-          </button>
-
-          <a href="#contact" className="btn-pill btn-md">
-            Start a project <ArrowUpRight className="w-4 h-4" />
+          <a href="#contact" className="btn-pill btn-md text-xs sm:text-sm px-4 sm:px-6 py-2 sm:py-2.5">
+            Start a project <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
           </a>
         </div>
       </header>
 
       {/* 2. Cinematic Hero Section with Full-Bleed Addis Ababa Skyline Image */}
       <section 
-        className="relative w-full min-h-[880px] md:min-h-[960px] flex items-center justify-center overflow-hidden bg-cover bg-center pt-28 pb-12 md:pt-32 md:pb-14"
+        className="relative w-full min-h-[820px] md:min-h-[960px] flex items-center justify-center overflow-hidden bg-cover bg-center pt-24 pb-10 md:pt-32 md:pb-14"
         style={{ backgroundImage: "url('/addis-ababa-skyline.jpeg')" }}
       >
         <div className="glow-hero-bg" />
 
         <div className="section-shell relative z-10 w-full">
           {/* Decoupled Hero Card Container (+50px height, simplified structure) */}
-          <div className="card-base rounded-[32px] md:rounded-[40px] px-6 py-14 md:px-12 md:py-18 lg:px-16 lg:py-22 min-h-[530px] md:min-h-[570px] flex items-center justify-center relative overflow-hidden transition-colors duration-300 backdrop-blur-md bg-[var(--surface)]/90 border border-[var(--border-subtle)]">
+          <div className="card-base rounded-[28px] sm:rounded-[36px] md:rounded-[40px] px-5 py-10 sm:px-8 sm:py-14 md:px-12 md:py-18 lg:px-16 lg:py-22 min-h-[480px] sm:min-h-[530px] md:min-h-[570px] flex items-center justify-center relative overflow-hidden transition-colors duration-300 backdrop-blur-md bg-[var(--surface)]/90 border border-[var(--border-subtle)]">
             {/* Animated Moving Background Orbs */}
             <div className="hero-moving-orb-1 absolute -top-32 -left-16 w-[360px] h-[360px] bg-[#2563FF] opacity-30 filter blur-[70px] pointer-events-none rounded-full" />
             <div className="hero-moving-orb-2 absolute -bottom-32 -right-16 w-[380px] h-[380px] bg-[#1237A6] opacity-35 filter blur-[70px] pointer-events-none rounded-full" />
 
             {/* Simplistic Centered Content */}
-            <div className="relative z-10 text-center flex flex-col items-center justify-center max-w-3xl mx-auto space-y-8 py-4">
-              <span className="eyebrow mx-auto tracking-widest text-xs font-mono">Independent software studio · Addis Ababa</span>
+            <div className="relative z-10 text-center flex flex-col items-center justify-center max-w-3xl mx-auto space-y-6 sm:space-y-8 py-2 sm:py-4">
+              <span className="eyebrow mx-auto tracking-widest text-[0.7rem] sm:text-xs font-mono text-center">Independent software studio · Addis Ababa</span>
 
-              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[0.95] text-[var(--text-primary)]">
+              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[0.98] sm:leading-[0.95] text-[var(--text-primary)]">
                 Make the<br /><em>next thing.</em>
               </h1>
 
-              <p className="text-lg sm:text-xl text-[var(--text-secondary)] font-normal leading-relaxed max-w-xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-[var(--text-secondary)] font-normal leading-relaxed max-w-xl mx-auto">
                 We design, build, and run software products for people with something useful to put into the world.
               </p>
 
-              <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
-                <a href="#contact" className="btn-primary btn-lg">
-                  Start a project <ArrowUpRight className="w-5 h-5" />
+              <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 pt-2">
+                <a href="#contact" className="btn-primary btn-lg text-sm sm:text-base px-6 sm:px-8 py-3.5 sm:py-4">
+                  Start a project <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
-                <a href="#work" className="btn-ghost btn-lg">
-                  See our work <ArrowUpRight className="w-5 h-5" />
+                <a href="#work" className="btn-ghost btn-lg text-sm sm:text-base px-6 sm:px-8 py-3.5 sm:py-4">
+                  See our work <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
               </div>
             </div>
@@ -398,50 +358,50 @@ export default function Page() {
           {/* Section Header */}
           <div className="max-w-3xl space-y-4">
             <span className="eyebrow">What we solve</span>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[var(--text-primary)] leading-[1.05]">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[var(--text-primary)] leading-[1.08] sm:leading-[1.05]">
               Whatever is in the way,<br />
               <em className="text-[var(--bright-blue)]">we help you move forward.</em>
             </h2>
-            <p className="text-lg sm:text-xl text-[var(--text-secondary)] font-normal leading-relaxed pt-1">
+            <p className="text-base sm:text-lg md:text-xl text-[var(--text-secondary)] font-normal leading-relaxed pt-1">
               You don&apos;t need to know the tech stack. Just what&apos;s broken, taking too much time, or waiting to be built.
             </p>
           </div>
 
           {/* Spacious 2-Column Architectural Card Gallery */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
             {solveItems.map((item) => (
               <div
                 key={item.num}
-                className="rounded-[32px] px-8 sm:px-12 lg:px-14 py-10 sm:py-12 border border-[var(--border-subtle)] hover:border-[var(--border-blue)] bg-[var(--elevated)]/90 backdrop-blur-md hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between shadow-[0_4px_24px_rgba(0,0,0,0.12)] hover:shadow-[0_16px_40px_rgba(37,99,255,0.14)]"
+                className="rounded-[28px] sm:rounded-[32px] px-6 sm:px-10 lg:px-12 py-8 sm:py-10 lg:py-12 border border-[var(--border-subtle)] hover:border-[var(--border-blue)] bg-[var(--elevated)]/90 backdrop-blur-md hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between shadow-[0_4px_24px_rgba(0,0,0,0.12)] hover:shadow-[0_16px_40px_rgba(37,99,255,0.14)]"
               >
                 {/* Ambient Subtle Corner Glow */}
                 <div className="absolute top-0 right-0 w-80 h-80 bg-[#2563FF] opacity-10 group-hover:opacity-25 transition-opacity duration-500 filter blur-[60px] pointer-events-none rounded-full" />
 
-                <div className="space-y-6 relative z-10">
+                <div className="space-y-5 sm:space-y-6 relative z-10">
                   {/* Top Row: Pill Tag & Transform Indicator */}
-                  <div className="flex flex-wrap items-center justify-between gap-3">
-                    <span className="font-mono text-xs font-bold text-[var(--bright-blue)] bg-[var(--surface)] border border-[var(--border-subtle)] px-3.5 py-1 rounded-full uppercase tracking-wider">
+                  <div className="flex flex-wrap items-center justify-between gap-2.5 sm:gap-3">
+                    <span className="font-mono text-xs font-bold text-[var(--bright-blue)] bg-[var(--surface)] border border-[var(--border-subtle)] px-3 py-1 rounded-full uppercase tracking-wider">
                       {item.num} / {item.tag}
                     </span>
-                    <span className="font-mono text-xs text-[var(--text-secondary)] px-3.5 py-1 rounded-full bg-[var(--surface)]/80 border border-[var(--border-subtle)] group-hover:border-[var(--border-blue)] group-hover:text-[var(--bright-blue)] transition-colors">
+                    <span className="font-mono text-xs text-[var(--text-secondary)] px-3 py-1 rounded-full bg-[var(--surface)]/80 border border-[var(--border-subtle)] group-hover:border-[var(--border-blue)] group-hover:text-[var(--bright-blue)] transition-colors">
                       {item.transform}
                     </span>
                   </div>
 
                   {/* Headline */}
-                  <h3 className="text-2xl sm:text-3xl lg:text-[2rem] font-extrabold text-[var(--text-primary)] group-hover:text-[var(--bright-blue)] transition-colors duration-300 leading-snug">
+                  <h3 className="text-xl sm:text-2xl lg:text-[1.85rem] font-extrabold text-[var(--text-primary)] group-hover:text-[var(--bright-blue)] transition-colors duration-300 leading-snug">
                     {item.headlinePrefix}
                     <em className="text-[var(--bright-blue)]">{item.headlineItalic}</em>
                   </h3>
 
                   {/* Concise Description */}
-                  <p className="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed">
+                  <p className="text-sm sm:text-base md:text-lg text-[var(--text-secondary)] leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
 
                 {/* Bottom Row: Action Link */}
-                <div className="pt-6 border-t border-[var(--border-subtle)] mt-8 flex items-center justify-between text-sm font-semibold text-[var(--bright-blue)] relative z-10">
+                <div className="pt-5 sm:pt-6 border-t border-[var(--border-subtle)] mt-6 sm:mt-8 flex items-center justify-between text-sm font-semibold text-[var(--bright-blue)] relative z-10">
                   <span className="text-xs font-mono uppercase tracking-wider text-[var(--text-muted)] group-hover:text-[var(--text-secondary)] transition-colors">
                     Scope &amp; Ship
                   </span>
@@ -455,13 +415,13 @@ export default function Page() {
 
             {/* Card 06: The Manifesto & Commitment Card */}
             <div
-              className="rounded-[32px] px-8 sm:px-12 lg:px-14 py-10 sm:py-12 border border-[var(--border-blue)] bg-gradient-to-br from-[var(--elevated)]/95 via-[var(--surface)]/90 to-[rgba(37,99,255,0.22)] backdrop-blur-md shadow-[0_0_50px_rgba(37,99,255,0.18)] relative overflow-hidden group hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+              className="rounded-[28px] sm:rounded-[32px] px-6 sm:px-10 lg:px-12 py-8 sm:py-10 lg:py-12 border border-[var(--border-blue)] bg-gradient-to-br from-[var(--elevated)]/95 via-[var(--surface)]/90 to-[rgba(37,99,255,0.22)] backdrop-blur-md shadow-[0_0_50px_rgba(37,99,255,0.18)] relative overflow-hidden group hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
             >
               <div className="hero-moving-orb-1 absolute -top-20 -right-20 w-80 h-80 bg-[#2563FF] opacity-25 filter blur-[60px] pointer-events-none rounded-full" />
 
-              <div className="space-y-6 relative z-10">
+              <div className="space-y-5 sm:space-y-6 relative z-10">
                 <div className="flex items-center justify-between text-xs font-mono">
-                  <span className="font-mono text-xs font-bold text-[var(--bright-blue)] bg-[var(--surface)] border border-[var(--border-blue)] px-3.5 py-1 rounded-full uppercase tracking-wider flex items-center gap-2">
+                  <span className="font-mono text-xs font-bold text-[var(--bright-blue)] bg-[var(--surface)] border border-[var(--border-blue)] px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-[var(--bright-blue)] animate-pulse" />
                     The Commitment
                   </span>
@@ -469,54 +429,54 @@ export default function Page() {
                 </div>
 
                 <div className="space-y-3">
-                  <div className="text-xl sm:text-2xl font-medium tracking-tight text-[var(--text-secondary)] leading-snug">
+                  <div className="text-lg sm:text-xl md:text-2xl font-medium tracking-tight text-[var(--text-secondary)] leading-snug">
                     <div>A problem to solve.</div>
                     <div>A process to improve.</div>
                     <div>An idea to build.</div>
                   </div>
-                  <h3 className="text-2xl sm:text-3xl lg:text-[2rem] font-extrabold text-[var(--text-primary)] leading-snug pt-1">
+                  <h3 className="text-xl sm:text-2xl lg:text-[1.85rem] font-extrabold text-[var(--text-primary)] leading-snug pt-1">
                     We&apos;re here to <em className="text-[var(--bright-blue)]">make it work.</em>
                   </h3>
                 </div>
 
-                <p className="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed">
+                <p className="text-sm sm:text-base md:text-lg text-[var(--text-secondary)] leading-relaxed">
                   No bloated scopes or detached handoffs. Tell us what is in your way, and our senior engineers will carry it forward.
                 </p>
               </div>
 
-              <div className="pt-6 border-t border-[var(--border-subtle)] mt-8 relative z-10">
-                <a href="#contact" className="btn-primary w-full justify-center py-4 text-base font-bold shadow-md">
-                  Start a project <ArrowUpRight className="w-5 h-5" />
+              <div className="pt-5 sm:pt-6 border-t border-[var(--border-subtle)] mt-6 sm:mt-8 relative z-10">
+                <a href="#contact" className="btn-primary w-full justify-center py-3.5 sm:py-4 text-sm sm:text-base font-bold shadow-md">
+                  Start a project <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
               </div>
             </div>
           </div>
 
           {/* Minimalist Visual Trust Badges */}
-          <div className="p-6 rounded-[24px] bg-[var(--elevated)] border border-[var(--border-subtle)] flex flex-wrap items-center justify-between gap-6 text-sm">
-            <div className="flex items-center gap-3">
-              <span className="w-2.5 h-2.5 rounded-full bg-[var(--bright-blue)]" />
+          <div className="p-5 sm:p-6 rounded-[20px] sm:rounded-[24px] bg-[var(--elevated)] border border-[var(--border-subtle)] grid grid-cols-2 md:flex md:flex-wrap items-center justify-between gap-4 sm:gap-6 text-xs sm:text-sm">
+            <div className="flex items-center gap-2.5 sm:gap-3">
+              <span className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-[var(--bright-blue)] shrink-0" />
               <span className="font-bold text-[var(--text-primary)]">100% Senior Talent</span>
             </div>
-            <div className="flex items-center gap-3">
-              <span className="w-2.5 h-2.5 rounded-full bg-[var(--bright-blue)]" />
+            <div className="flex items-center gap-2.5 sm:gap-3">
+              <span className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-[var(--bright-blue)] shrink-0" />
               <span className="font-bold text-[var(--text-primary)]">Production Uptime</span>
             </div>
-            <div className="flex items-center gap-3">
-              <span className="w-2.5 h-2.5 rounded-full bg-[var(--bright-blue)]" />
+            <div className="flex items-center gap-2.5 sm:gap-3">
+              <span className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-[var(--bright-blue)] shrink-0" />
               <span className="font-bold text-[var(--text-primary)]">Product Operators</span>
             </div>
-            <div className="flex items-center gap-3">
-              <span className="w-2.5 h-2.5 rounded-full bg-[var(--bright-blue)]" />
+            <div className="flex items-center gap-2.5 sm:gap-3">
+              <span className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-[var(--bright-blue)] shrink-0" />
               <span className="font-bold text-[var(--text-primary)]">Transparent Delivery</span>
             </div>
           </div>
 
-          <div className="pt-2 flex flex-wrap items-center justify-between gap-6">
-            <p className="text-lg text-[var(--text-secondary)] max-w-xl">
+          <div className="pt-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+            <p className="text-base sm:text-lg text-[var(--text-secondary)] max-w-xl">
               Ready to talk through your product requirements or technical challenges?
             </p>
-            <a href="#contact" className="btn-primary btn-lg">
+            <a href="#contact" className="btn-primary btn-lg w-full sm:w-auto justify-center">
               Start a project <ArrowUpRight className="w-5 h-5" />
             </a>
           </div>
@@ -694,27 +654,27 @@ export default function Page() {
 
 
       {/* 10. Contact Section — Visual Climax */}
-      <section id="contact" className="relative pt-32 pb-32 md:pt-44 md:pb-44 overflow-hidden">
+      <section id="contact" className="relative pt-24 pb-24 md:pt-40 md:pb-40 overflow-hidden">
         <div className="glow-climax-bg" />
 
-        <div className="section-shell relative z-10 text-center max-w-4xl space-y-8">
+        <div className="section-shell relative z-10 text-center max-w-4xl space-y-6 sm:space-y-8">
           <span className="eyebrow">Have a good one?</span>
-          <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tight leading-none text-[var(--text-primary)]">
+          <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-none text-[var(--text-primary)]">
             Let&apos;s make<br /><em>it real.</em>
           </h2>
-          <p className="text-lg sm:text-xl md:text-2xl text-[var(--text-secondary)] max-w-xl mx-auto leading-relaxed pt-2">
+          <p className="text-base sm:text-xl md:text-2xl text-[var(--text-secondary)] max-w-xl mx-auto leading-relaxed pt-2">
             Tell us what you&apos;re building, what problem you&apos;re solving, and where you are today.
           </p>
 
-          <div className="pt-6">
-            <a href="mailto:hello@mellasoftware.com" className="btn-primary btn-lg text-lg px-10 py-5">
+          <div className="pt-4 sm:pt-6">
+            <a href="mailto:hello@mellasoftware.com" className="btn-primary btn-lg text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-5 w-full sm:w-auto justify-center">
               Start a project <ArrowUpRight className="w-5 h-5" />
             </a>
           </div>
 
-          <div className="pt-12 text-sm text-[var(--text-secondary)] font-mono leading-loose space-y-2">
-            <strong className="text-[var(--text-primary)] text-base block font-sans">hello@mellasoftware.com</strong>
-            <div className="flex flex-wrap items-center justify-center gap-4 text-base font-sans font-medium text-[var(--bright-blue)] pt-1 pb-1">
+          <div className="pt-8 sm:pt-12 text-sm text-[var(--text-secondary)] font-mono leading-loose space-y-2">
+            <strong className="text-[var(--text-primary)] text-base block font-sans break-all sm:break-normal">hello@mellasoftware.com</strong>
+            <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-sm sm:text-base font-sans font-medium text-[var(--bright-blue)] pt-1 pb-1">
               <a href="tel:+251944741857" className="hover:underline">
                 +251 944 741 857
               </a>
@@ -730,8 +690,8 @@ export default function Page() {
       </section>
 
       {/* 11. Minimal Footer */}
-      <footer className="border-t border-[var(--border-subtle)] py-12 bg-[var(--bg)] transition-colors duration-300">
-        <div className="section-shell flex flex-col md:flex-row items-start md:items-center justify-between gap-8 text-xs text-[var(--text-secondary)]">
+      <footer className="border-t border-[var(--border-subtle)] py-10 sm:py-12 bg-[var(--bg)] transition-colors duration-300">
+        <div className="section-shell flex flex-col md:flex-row items-start md:items-center justify-between gap-6 sm:gap-8 text-xs text-[var(--text-secondary)]">
           <div className="space-y-2">
             <a href="#top" className="brand-logo text-lg">
               <img src="/blue icon.svg" alt="Mella Emblem" className="brand-icon" />
