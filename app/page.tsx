@@ -136,8 +136,6 @@ export default function Page() {
     },
   ]
 
-  const [activeScenario, setActiveScenario] = useState<string>('all')
-
   const solveItems = [
     {
       id: '01',
@@ -146,7 +144,6 @@ export default function Page() {
       headlinePrefix: 'You know what you want to build. ',
       headlineItalic: 'We help make it real.',
       desc: 'Maybe you have a business idea, a new service, or a better way of doing something. We help turn that idea into something people can actually use — from figuring out what matters most to launching the finished product.',
-      pills: ['Scoping & validation', 'Production MVP', 'User testing & launch'],
       icon: (
         <svg className="w-5 h-5 text-[var(--bright-blue)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -160,7 +157,6 @@ export default function Page() {
       headlinePrefix: 'Your team spends time doing things ',
       headlineItalic: 'software should handle.',
       desc: 'Information is scattered across spreadsheets, messages, paperwork, and different tools. We bring those processes together into one system that makes everyday work simpler and easier to manage.',
-      pills: ['Internal operations', 'Workflow automation', 'Unified central system'],
       icon: (
         <svg className="w-5 h-5 text-[var(--bright-blue)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -174,7 +170,6 @@ export default function Page() {
       headlinePrefix: 'Your software is slowing your business ',
       headlineItalic: 'down.',
       desc: "Maybe it's difficult to use, unreliable, outdated, or no longer fits the way your business works. We help improve what you already have, fix what's holding you back, or build a better system when it's time for a change.",
-      pills: ['Performance tuning', 'Modern UI/UX rebuild', 'Fixing bottlenecks'],
       icon: (
         <svg className="w-5 h-5 text-[var(--bright-blue)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -188,7 +183,6 @@ export default function Page() {
       headlinePrefix: "What worked before doesn't ",
       headlineItalic: 'work anymore.',
       desc: 'As your customers, team, and operations grow, the tools you started with can become a limitation. We build software that grows with the business and continue improving it as new needs come up.',
-      pills: ['Elastic cloud scale', 'High concurrency', 'Modular architecture'],
       icon: (
         <svg className="w-5 h-5 text-[var(--bright-blue)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
@@ -202,7 +196,6 @@ export default function Page() {
       headlinePrefix: "You don't want to be left with ",
       headlineItalic: 'a finished project.',
       desc: "We stay involved beyond the launch. We can keep the product running, solve problems as they appear, improve it over time, and help you build what's next.",
-      pills: ['Ongoing maintenance', 'Continuous improvements', 'Dedicated partner'],
       icon: (
         <svg className="w-5 h-5 text-[var(--bright-blue)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -210,16 +203,6 @@ export default function Page() {
       ),
     },
   ]
-
-  const handleScenarioSelect = (id: string) => {
-    setActiveScenario(id)
-    if (id !== 'all') {
-      const el = document.getElementById(`scenario-${id}`)
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'center' })
-      }
-    }
-  }
 
   const processSteps = [
     {
@@ -433,105 +416,54 @@ export default function Page() {
             </p>
           </div>
 
-          {/* Interactive Scenario Selector Pills */}
-          <div className="flex flex-wrap items-center gap-2 pt-2">
-            <span className="text-xs font-mono text-[var(--text-muted)] uppercase tracking-wider mr-2 hidden sm:inline-block">
-              Choose your situation:
-            </span>
-            <button
-              onClick={() => handleScenarioSelect('all')}
-              className={`px-3.5 py-1.5 rounded-full text-xs font-mono transition-all duration-200 cursor-pointer ${
-                activeScenario === 'all'
-                  ? 'bg-[var(--primary-blue)] text-white font-semibold shadow-sm'
-                  : 'bg-[var(--bg)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] border border-[var(--border-subtle)]'
-              }`}
-            >
-              All scenarios (5)
-            </button>
-            {solveItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => handleScenarioSelect(item.id)}
-                className={`px-3.5 py-1.5 rounded-full text-xs font-mono transition-all duration-200 cursor-pointer ${
-                  activeScenario === item.id
-                    ? 'bg-[var(--primary-blue)] text-white font-semibold shadow-sm'
-                    : 'bg-[var(--bg)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] border border-[var(--border-subtle)]'
-                }`}
-              >
-                {item.num} · {item.tag.length > 20 ? item.tag.substring(0, 18) + '...' : item.tag}
-              </button>
-            ))}
-          </div>
-
           {/* 3x2 Scenario & Manifesto Bento Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {solveItems.map((item) => {
-              const isSelected = activeScenario === item.id
-              return (
-                <div
-                  key={item.id}
-                  id={`scenario-${item.id}`}
-                  onClick={() => handleScenarioSelect(item.id)}
-                  className={`rounded-[28px] p-7 md:p-8 flex flex-col justify-between border transition-all duration-300 group overflow-hidden bg-[var(--elevated)] cursor-pointer relative ${
-                    isSelected
-                      ? 'border-[var(--bright-blue)] ring-2 ring-[var(--bright-blue)]/40 shadow-[0_0_35px_rgba(37,99,255,0.22)] -translate-y-1'
-                      : 'border-[var(--border-subtle)] hover:border-[var(--border-blue)] hover:-translate-y-1'
-                  }`}
-                >
-                  {/* Subtle Ambient Hover Glow */}
-                  <div className="absolute -top-20 -right-20 w-48 h-48 bg-[#2563FF] opacity-0 group-hover:opacity-10 transition-opacity duration-500 filter blur-[40px] pointer-events-none rounded-full" />
+            {solveItems.map((item) => (
+              <div
+                key={item.id}
+                className="rounded-[28px] p-7 md:p-8 flex flex-col justify-between border border-[var(--border-subtle)] hover:border-[var(--border-blue)] hover:-translate-y-1 transition-all duration-300 group overflow-hidden bg-[var(--elevated)] relative"
+              >
+                {/* Subtle Ambient Hover Glow */}
+                <div className="absolute -top-20 -right-20 w-48 h-48 bg-[#2563FF] opacity-0 group-hover:opacity-10 transition-opacity duration-500 filter blur-[40px] pointer-events-none rounded-full" />
 
-                  <div className="space-y-5 relative z-10">
-                    {/* Header Row: Icon + Number */}
-                    <div className="flex items-center justify-between">
-                      <div className="w-11 h-11 rounded-xl bg-[var(--elevated)] border border-[var(--border-subtle)] flex items-center justify-center group-hover:border-[var(--border-blue)] transition-colors">
-                        {item.icon}
-                      </div>
-                      <div className="flex items-center gap-1.5 font-mono text-xs">
-                        <span className="text-[var(--bright-blue)] font-bold">{item.num}</span>
-                        <span className="text-[var(--text-muted)]">/ 05</span>
-                      </div>
+                <div className="space-y-5 relative z-10">
+                  {/* Header Row: Icon + Number */}
+                  <div className="flex items-center justify-between">
+                    <div className="w-11 h-11 rounded-xl bg-[var(--surface)] border border-[var(--border-subtle)] flex items-center justify-center group-hover:border-[var(--border-blue)] transition-colors">
+                      {item.icon}
                     </div>
-
-                    {/* Trigger Eyebrow & Punchy Headline */}
-                    <div className="space-y-2">
-                      <span className="text-xs font-mono text-[var(--bright-blue)] uppercase tracking-wider font-semibold block">
-                        {item.num} / {item.tag}
-                      </span>
-                      <h3 className="text-2xl sm:text-2xl lg:text-[1.6rem] font-extrabold text-[var(--text-primary)] group-hover:text-[var(--bright-blue)] transition-colors duration-300 leading-snug">
-                        {item.headlinePrefix}
-                        <em className="text-[var(--bright-blue)]">{item.headlineItalic}</em>
-                      </h3>
-                    </div>
-
-                    {/* Narrative Body */}
-                    <p className="text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed">
-                      {item.desc}
-                    </p>
-
-                    {/* Practical Delivery Badges */}
-                    <div className="flex flex-wrap gap-2 pt-2">
-                      {item.pills.map((pill, pIdx) => (
-                        <span
-                          key={pIdx}
-                          className="text-xs font-mono px-2.5 py-1 rounded-md bg-[var(--elevated)] text-[var(--text-secondary)] border border-[var(--border-subtle)]"
-                        >
-                          {pill}
-                        </span>
-                      ))}
+                    <div className="flex items-center gap-1.5 font-mono text-xs">
+                      <span className="text-[var(--bright-blue)] font-bold">{item.num}</span>
+                      <span className="text-[var(--text-muted)]">/ 05</span>
                     </div>
                   </div>
 
-                  {/* Card Footer Link */}
-                  <div className="pt-6 border-t border-[var(--border-subtle)] mt-6 flex items-center justify-between text-xs sm:text-sm font-semibold text-[var(--bright-blue)] relative z-10">
-                    <a href="#contact" className="group-hover:underline flex items-center gap-1.5">
-                      <span>Talk through this scenario</span>
-                      <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
-                    </a>
+                  {/* Trigger Eyebrow & Punchy Headline */}
+                  <div className="space-y-2">
+                    <span className="text-xs font-mono text-[var(--bright-blue)] uppercase tracking-wider font-semibold block">
+                      {item.num} / {item.tag}
+                    </span>
+                    <h3 className="text-2xl sm:text-2xl lg:text-[1.6rem] font-extrabold text-[var(--text-primary)] group-hover:text-[var(--bright-blue)] transition-colors duration-300 leading-snug">
+                      {item.headlinePrefix}
+                      <em className="text-[var(--bright-blue)]">{item.headlineItalic}</em>
+                    </h3>
                   </div>
+
+                  {/* Narrative Body */}
+                  <p className="text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed">
+                    {item.desc}
+                  </p>
                 </div>
-              )
-            })}
+
+                {/* Card Footer Link */}
+                <div className="pt-6 border-t border-[var(--border-subtle)] mt-6 flex items-center justify-between text-xs sm:text-sm font-semibold text-[var(--bright-blue)] relative z-10">
+                  <a href="#contact" className="group-hover:underline flex items-center gap-1.5">
+                    <span>Talk through this scenario</span>
+                    <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+                  </a>
+                </div>
+              </div>
+            ))}
 
             {/* Card 06: The Manifesto & Commitment Card */}
             <div
