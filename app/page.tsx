@@ -214,7 +214,6 @@ export default function Page() {
         <nav className="nav-links" aria-label="Primary Navigation">
           <a href="#work" className="nav-link">Work</a>
           <a href="#services" className="nav-link">What we solve</a>
-          <a href="#about" className="nav-link">About</a>
           <a href="#contact" className="nav-link">Contact</a>
         </nav>
 
@@ -376,82 +375,254 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 4. What We Solve Section — Split Sticky Layout */}
+      {/* 4. What We Solve Section — Spacious Architectural Slates with Distinct Card Designs */}
       <section id="services" className="section-padding bg-[var(--surface)] border-y border-[var(--border-subtle)] relative transition-colors duration-300">
         <div className="section-shell space-y-16">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-            
-            {/* Left Column: Sticky Header & Manifesto Box */}
-            <div className="lg:col-span-5 lg:sticky lg:top-28 space-y-8">
-              <div className="space-y-4">
-                <span className="eyebrow">What we solve</span>
-                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[var(--text-primary)] leading-[1.05]">
-                  Whatever is in the way,<br />
-                  <em className="text-[var(--bright-blue)]">we help you move forward.</em>
-                </h2>
-                <p className="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed">
-                  You don&apos;t need to know the tech stack. Just what&apos;s broken, taking too much time, or waiting to be built.
-                </p>
-              </div>
+          {/* Section Header */}
+          <div className="max-w-3xl space-y-4">
+            <span className="eyebrow">What we solve</span>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[var(--text-primary)] leading-[1.05]">
+              Whatever is in the way,<br />
+              <em className="text-[var(--bright-blue)]">we help you move forward.</em>
+            </h2>
+            <p className="text-lg sm:text-xl text-[var(--text-secondary)] font-normal leading-relaxed pt-1">
+              You don&apos;t need to know the tech stack. Just what&apos;s broken, taking too much time, or waiting to be built.
+            </p>
+          </div>
 
-              {/* Manifesto Card */}
-              <div className="rounded-[24px] p-6 sm:p-7 border border-[var(--border-blue)] bg-gradient-to-br from-[var(--elevated)] via-[var(--elevated)] to-[rgba(37,99,255,0.14)] relative overflow-hidden shadow-[0_0_30px_rgba(37,99,255,0.08)] space-y-5">
-                <div className="hero-moving-orb-1 absolute -top-16 -right-16 w-44 h-44 bg-[#2563FF] opacity-25 filter blur-[40px] pointer-events-none rounded-full" />
-                <div className="space-y-2 relative z-10">
-                  <div className="text-xs font-mono text-[var(--bright-blue)] uppercase tracking-wider font-semibold">
-                    The Mella Principle
+          {/* 5 Distinct, Spacious Scenario Slates */}
+          <div className="space-y-6">
+            {/* Card 01: You Have An Idea */}
+            <div className="rounded-[32px] px-8 sm:px-12 md:px-16 py-10 md:py-12 border border-[var(--border-subtle)] hover:border-[var(--border-blue)] bg-[var(--elevated)] hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-96 h-96 bg-[#2563FF] opacity-15 filter blur-[70px] pointer-events-none rounded-full" />
+              <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div className="lg:col-span-3 space-y-2">
+                  <div className="text-3xl sm:text-4xl font-extrabold font-mono text-[var(--bright-blue)]">01</div>
+                  <div className="text-xs font-mono text-[var(--text-muted)] uppercase tracking-wider font-semibold">
+                    The Opportunity
                   </div>
-                  <div className="text-lg font-medium text-[var(--text-secondary)] leading-snug">
-                    <div>A problem to solve.</div>
-                    <div>A process to improve.</div>
-                    <div>An idea to build.</div>
-                  </div>
-                  <div className="text-2xl font-extrabold text-[var(--text-primary)] pt-1">
-                    We&apos;re here to <em className="text-[var(--bright-blue)]">make it work.</em>
+                  <span className="inline-block text-xs font-mono px-3 py-1 rounded-full bg-[var(--surface)] border border-[var(--border-subtle)] text-[var(--bright-blue)] font-bold">
+                    Concept → Live MVP
+                  </span>
+                </div>
+
+                <div className="lg:col-span-7 space-y-3">
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[var(--text-primary)] group-hover:text-[var(--bright-blue)] transition-colors leading-tight">
+                    You know what to build. <em className="text-[var(--bright-blue)]">We make it real.</em>
+                  </h3>
+                  <p className="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed max-w-2xl">
+                    We turn your concept into a live product people can actually use — scoping what matters most and launching clean software.
+                  </p>
+                  <div className="pt-2 flex flex-wrap items-center gap-3 text-xs font-mono text-[var(--text-muted)]">
+                    <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[var(--bright-blue)]" /> Scoping &amp; Architecture</span>
+                    <span className="text-[var(--border-subtle)]">·</span>
+                    <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[var(--bright-blue)]" /> Interactive MVP</span>
+                    <span className="text-[var(--border-subtle)]">·</span>
+                    <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[var(--bright-blue)]" /> Public Launch</span>
                   </div>
                 </div>
 
-                <a href="#contact" className="btn-primary w-full justify-center py-3 text-sm font-bold shadow-md relative z-10">
-                  Start a project <ArrowUpRight className="w-4 h-4" />
-                </a>
+                <div className="lg:col-span-2 flex lg:justify-end">
+                  <a 
+                    href="#contact" 
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--bright-blue)] hover:text-white px-5 py-3 rounded-full border border-[var(--border-subtle)] group-hover:border-[var(--primary-blue)] group-hover:bg-[var(--primary-blue)] transition-all duration-300"
+                  >
+                    <span>Discuss</span>
+                    <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  </a>
+                </div>
               </div>
             </div>
 
-            {/* Right Column: 5 Ultra-Clean, Concise Scenario Cards */}
-            <div className="lg:col-span-7 space-y-4">
-              {solveItems.map((item) => (
-                <div
-                  key={item.num}
-                  className="rounded-[22px] p-6 sm:p-7 border border-[var(--border-subtle)] hover:border-[var(--border-blue)] bg-[var(--elevated)] hover:-translate-y-0.5 transition-all duration-300 group relative flex flex-col justify-between"
-                >
-                  <div className="space-y-2.5">
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs font-mono text-[var(--bright-blue)] uppercase tracking-wider font-bold">
-                        {item.num} / {item.tag}
-                      </span>
-                      <span className="text-xs font-mono px-2.5 py-0.5 rounded-full bg-[var(--surface)] border border-[var(--border-subtle)] text-[var(--text-muted)] group-hover:text-[var(--bright-blue)] group-hover:border-[var(--border-blue)] transition-colors">
-                        {item.transform}
-                      </span>
-                    </div>
-
-                    <h3 className="text-xl sm:text-2xl font-bold text-[var(--text-primary)] group-hover:text-[var(--bright-blue)] transition-colors leading-snug">
-                      {item.headlinePrefix}
-                      <em className="text-[var(--bright-blue)]">{item.headlineItalic}</em>
-                    </h3>
-
-                    <p className="text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed">
-                      {item.desc}
-                    </p>
+            {/* Card 02: Too Much Done Manually */}
+            <div className="rounded-[32px] px-8 sm:px-12 md:px-16 py-10 md:py-12 border border-[var(--border-subtle)] hover:border-[var(--border-blue)] bg-[var(--elevated)] hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
+              <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#1237A6] opacity-20 filter blur-[70px] pointer-events-none rounded-full" />
+              <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div className="lg:col-span-3 space-y-2">
+                  <div className="text-3xl sm:text-4xl font-extrabold font-mono text-[var(--bright-blue)]">02</div>
+                  <div className="text-xs font-mono text-[var(--text-muted)] uppercase tracking-wider font-semibold">
+                    The Bottleneck
                   </div>
+                  <span className="inline-block text-xs font-mono px-3 py-1 rounded-full bg-[var(--surface)] border border-[var(--border-subtle)] text-[var(--bright-blue)] font-bold">
+                    Manual Tasks → Automated Flow
+                  </span>
+                </div>
 
-                  <div className="pt-3.5 mt-3.5 border-t border-[var(--border-subtle)] flex items-center justify-between text-xs font-semibold text-[var(--bright-blue)]">
-                    <a href="#contact" className="group-hover:underline flex items-center gap-1">
-                      <span>Talk through this scenario</span>
-                      <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                    </a>
+                <div className="lg:col-span-7 space-y-3">
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[var(--text-primary)] group-hover:text-[var(--bright-blue)] transition-colors leading-tight">
+                    Your team spends time <em className="text-[var(--bright-blue)]">software should handle.</em>
+                  </h3>
+                  <p className="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed max-w-2xl">
+                    We bring scattered spreadsheets, messages, and paperwork into one unified system that makes daily operations automatic.
+                  </p>
+                  <div className="pt-2 flex flex-wrap items-center gap-3 text-xs font-mono text-[var(--text-muted)]">
+                    <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[var(--bright-blue)]" /> Unified Database</span>
+                    <span className="text-[var(--border-subtle)]">·</span>
+                    <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[var(--bright-blue)]" /> Custom Internal Tools</span>
+                    <span className="text-[var(--border-subtle)]">·</span>
+                    <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[var(--bright-blue)]" /> Automated Sync</span>
                   </div>
                 </div>
-              ))}
+
+                <div className="lg:col-span-2 flex lg:justify-end">
+                  <a 
+                    href="#contact" 
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--bright-blue)] hover:text-white px-5 py-3 rounded-full border border-[var(--border-subtle)] group-hover:border-[var(--primary-blue)] group-hover:bg-[var(--primary-blue)] transition-all duration-300"
+                  >
+                    <span>Discuss</span>
+                    <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 03: Current System Isn't Working */}
+            <div className="rounded-[32px] px-8 sm:px-12 md:px-16 py-10 md:py-12 border border-[var(--border-subtle)] hover:border-[var(--border-blue)] bg-[var(--elevated)] hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
+              <div className="absolute top-0 right-1/4 w-80 h-80 bg-[#2563FF] opacity-10 filter blur-[70px] pointer-events-none rounded-full" />
+              <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div className="lg:col-span-3 space-y-2">
+                  <div className="text-3xl sm:text-4xl font-extrabold font-mono text-[var(--bright-blue)]">03</div>
+                  <div className="text-xs font-mono text-[var(--text-muted)] uppercase tracking-wider font-semibold">
+                    The Drag
+                  </div>
+                  <span className="inline-block text-xs font-mono px-3 py-1 rounded-full bg-[var(--surface)] border border-[var(--border-subtle)] text-[var(--bright-blue)] font-bold">
+                    Sluggish Legacy → Fast &amp; Modern
+                  </span>
+                </div>
+
+                <div className="lg:col-span-7 space-y-3">
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[var(--text-primary)] group-hover:text-[var(--bright-blue)] transition-colors leading-tight">
+                    Your software is slowing <em className="text-[var(--bright-blue)]">your business down.</em>
+                  </h3>
+                  <p className="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed max-w-2xl">
+                    We fix bottlenecks, modernize outdated interfaces, and refactor or rebuild legacy software so it works seamlessly.
+                  </p>
+                  <div className="pt-2 flex flex-wrap items-center gap-3 text-xs font-mono text-[var(--text-muted)]">
+                    <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[var(--bright-blue)]" /> Performance Tuning</span>
+                    <span className="text-[var(--border-subtle)]">·</span>
+                    <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[var(--bright-blue)]" /> Clean UI/UX Rebuild</span>
+                    <span className="text-[var(--border-subtle)]">·</span>
+                    <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[var(--bright-blue)]" /> Zero Data Loss</span>
+                  </div>
+                </div>
+
+                <div className="lg:col-span-2 flex lg:justify-end">
+                  <a 
+                    href="#contact" 
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--bright-blue)] hover:text-white px-5 py-3 rounded-full border border-[var(--border-subtle)] group-hover:border-[var(--primary-blue)] group-hover:bg-[var(--primary-blue)] transition-all duration-300"
+                  >
+                    <span>Discuss</span>
+                    <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 04: Business Is Growing */}
+            <div className="rounded-[32px] px-8 sm:px-12 md:px-16 py-10 md:py-12 border border-[var(--border-subtle)] hover:border-[var(--border-blue)] bg-[var(--elevated)] hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
+              <div className="absolute -bottom-10 right-10 w-96 h-96 bg-[#1237A6] opacity-15 filter blur-[70px] pointer-events-none rounded-full" />
+              <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div className="lg:col-span-3 space-y-2">
+                  <div className="text-3xl sm:text-4xl font-extrabold font-mono text-[var(--bright-blue)]">04</div>
+                  <div className="text-xs font-mono text-[var(--text-muted)] uppercase tracking-wider font-semibold">
+                    The Scale
+                  </div>
+                  <span className="inline-block text-xs font-mono px-3 py-1 rounded-full bg-[var(--surface)] border border-[var(--border-subtle)] text-[var(--bright-blue)] font-bold">
+                    Capacity Limits → Elastic Scale
+                  </span>
+                </div>
+
+                <div className="lg:col-span-7 space-y-3">
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[var(--text-primary)] group-hover:text-[var(--bright-blue)] transition-colors leading-tight">
+                    What worked before <em className="text-[var(--bright-blue)]">doesn&apos;t work anymore.</em>
+                  </h3>
+                  <p className="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed max-w-2xl">
+                    We build elastic, high-concurrency cloud architecture that comfortably absorbs new users, traffic spikes, and team expansion.
+                  </p>
+                  <div className="pt-2 flex flex-wrap items-center gap-3 text-xs font-mono text-[var(--text-muted)]">
+                    <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[var(--bright-blue)]" /> High-Availability Cloud</span>
+                    <span className="text-[var(--border-subtle)]">·</span>
+                    <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[var(--bright-blue)]" /> Load Balancing</span>
+                    <span className="text-[var(--border-subtle)]">·</span>
+                    <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[var(--bright-blue)]" /> Modular Microservices</span>
+                  </div>
+                </div>
+
+                <div className="lg:col-span-2 flex lg:justify-end">
+                  <a 
+                    href="#contact" 
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--bright-blue)] hover:text-white px-5 py-3 rounded-full border border-[var(--border-subtle)] group-hover:border-[var(--primary-blue)] group-hover:bg-[var(--primary-blue)] transition-all duration-300"
+                  >
+                    <span>Discuss</span>
+                    <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 05: Someone To Take Ownership */}
+            <div className="rounded-[32px] px-8 sm:px-12 md:px-16 py-10 md:py-12 border border-[var(--border-subtle)] hover:border-[var(--border-blue)] bg-[var(--elevated)] hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-96 h-96 bg-[#2563FF] opacity-20 filter blur-[70px] pointer-events-none rounded-full" />
+              <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div className="lg:col-span-3 space-y-2">
+                  <div className="text-3xl sm:text-4xl font-extrabold font-mono text-[var(--bright-blue)]">05</div>
+                  <div className="text-xs font-mono text-[var(--text-muted)] uppercase tracking-wider font-semibold">
+                    The Partnership
+                  </div>
+                  <span className="inline-block text-xs font-mono px-3 py-1 rounded-full bg-[var(--surface)] border border-[var(--border-subtle)] text-[var(--bright-blue)] font-bold">
+                    One-off Handoff → Dedicated Team
+                  </span>
+                </div>
+
+                <div className="lg:col-span-7 space-y-3">
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[var(--text-primary)] group-hover:text-[var(--bright-blue)] transition-colors leading-tight">
+                    Never left stranded with <em className="text-[var(--bright-blue)]">a finished project.</em>
+                  </h3>
+                  <p className="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed max-w-2xl">
+                    We stay involved beyond launch — keeping your software running, solving live issues proactively, and continuously shipping new features.
+                  </p>
+                  <div className="pt-2 flex flex-wrap items-center gap-3 text-xs font-mono text-[var(--text-muted)]">
+                    <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[var(--bright-blue)]" /> 24/7 Production Monitoring</span>
+                    <span className="text-[var(--border-subtle)]">·</span>
+                    <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[var(--bright-blue)]" /> Continuous Improvements</span>
+                    <span className="text-[var(--border-subtle)]">·</span>
+                    <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[var(--bright-blue)]" /> Dedicated Engineering</span>
+                  </div>
+                </div>
+
+                <div className="lg:col-span-2 flex lg:justify-end">
+                  <a 
+                    href="#contact" 
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--bright-blue)] hover:text-white px-5 py-3 rounded-full border border-[var(--border-subtle)] group-hover:border-[var(--primary-blue)] group-hover:bg-[var(--primary-blue)] transition-all duration-300"
+                  >
+                    <span>Discuss</span>
+                    <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* The Manifesto Climax Banner */}
+          <div className="rounded-[32px] md:rounded-[40px] px-8 sm:px-12 md:px-16 py-10 md:py-14 border border-[var(--border-blue)] bg-gradient-to-br from-[var(--elevated)] via-[var(--surface)] to-[rgba(37,99,255,0.18)] shadow-[0_0_50px_rgba(37,99,255,0.12)] relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="hero-moving-orb-1 absolute -top-24 -right-24 w-80 h-80 bg-[#2563FF] opacity-25 filter blur-[60px] pointer-events-none rounded-full" />
+            
+            <div className="space-y-4 max-w-2xl relative z-10 text-center md:text-left">
+              <span className="eyebrow">The Mella Principle</span>
+              <div className="text-xl sm:text-2xl md:text-3xl font-medium tracking-tight text-[var(--text-secondary)] leading-snug">
+                <div>A problem to solve.</div>
+                <div>A process to improve.</div>
+                <div>An idea to build.</div>
+              </div>
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[var(--text-primary)] leading-tight pt-1">
+                We&apos;re here to <em className="text-[var(--bright-blue)]">make it work.</em>
+              </h3>
+            </div>
+
+            <div className="relative z-10 shrink-0">
+              <a href="#contact" className="btn-primary btn-lg text-base px-10 py-5 font-bold shadow-lg">
+                Start a project <ArrowUpRight className="w-5 h-5" />
+              </a>
             </div>
           </div>
 
@@ -654,33 +825,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 9. About Mella Section */}
-      <section id="about" className="section-padding relative">
-        <div className="section-shell">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-            <div className="lg:col-span-5 space-y-4">
-              <span className="eyebrow">About Mella</span>
-              <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[var(--text-primary)]">
-                Small team.<br /><em>Big follow-through.</em>
-              </h2>
-            </div>
 
-            <div className="lg:col-span-7 space-y-6">
-              <p className="text-xl sm:text-2xl text-[var(--text-primary)] font-medium leading-relaxed">
-                Mella Software Solutions PLC builds software products under its own name and works with companies that need a team to design, build, and support their software.
-              </p>
-              <p className="text-lg text-[var(--text-secondary)] leading-relaxed">
-                We&apos;re small enough that you know who is doing the work.
-              </p>
-              <div className="pt-2">
-                <a href="#contact" className="btn-ghost btn-lg">
-                  About Mella <ArrowUpRight className="w-4 h-4" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* 10. Contact Section — Visual Climax */}
       <section id="contact" className="relative pt-32 pb-32 md:pt-44 md:pb-44 overflow-hidden">
@@ -732,7 +877,6 @@ export default function Page() {
           <nav className="flex flex-wrap gap-8 font-medium text-sm text-[var(--text-secondary)]">
             <a href="#work" className="hover:text-[var(--text-primary)] transition-colors">Work</a>
             <a href="#services" className="hover:text-[var(--text-primary)] transition-colors">What we solve</a>
-            <a href="#about" className="hover:text-[var(--text-primary)] transition-colors">About</a>
             <a href="#contact" className="hover:text-[var(--text-primary)] transition-colors">Contact</a>
           </nav>
 
