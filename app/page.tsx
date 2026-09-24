@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 
 function ArrowUpRight({ className = "w-4 h-4 inline-block ml-1" }: { className?: string }) {
   return (
