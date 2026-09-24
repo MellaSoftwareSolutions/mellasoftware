@@ -79,7 +79,7 @@ export default function Page() {
       visual: (
         <div className="w-full h-full min-h-[190px] rounded-2xl overflow-hidden relative group border border-[var(--border-blue)]">
           <img 
-            src="/mizan-net-card.jpg" 
+            src="/mella-net.jpeg" 
             alt="Mizan Net AI Legal Intelligence Visual" 
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
           />
@@ -95,7 +95,7 @@ export default function Page() {
       visual: (
         <div className="w-full h-full min-h-[190px] rounded-2xl overflow-hidden relative group border border-[var(--border-blue)]">
           <img 
-            src="/school-system-card.jpg" 
+            src="/mella-school.jpeg" 
             alt="School Management System ERP Visual" 
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
           />
@@ -111,7 +111,7 @@ export default function Page() {
       visual: (
         <div className="w-full h-full min-h-[190px] rounded-2xl overflow-hidden relative group border border-[var(--border-blue)]">
           <img 
-            src="/clinic-system-card.jpg" 
+            src="/mella-clinic.jpeg" 
             alt="Clinic Management System EHR Visual" 
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
           />
@@ -127,7 +127,7 @@ export default function Page() {
       visual: (
         <div className="w-full h-full min-h-[190px] rounded-2xl overflow-hidden relative group border border-[var(--border-blue)]">
           <img 
-            src="/restaurant-system-card.jpg" 
+            src="/mella-menu.jpeg" 
             alt="Restaurant Management System POS KOT Visual" 
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
           />
@@ -375,9 +375,26 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 4. What We Solve Section — Spacious Architectural Slates with Distinct Card Designs */}
-      <section id="services" className="section-padding bg-[var(--surface)] border-y border-[var(--border-subtle)] relative transition-colors duration-300">
-        <div className="section-shell space-y-16">
+      {/* 4. What We Solve Section — Spacious Architectural Slates with Unique Patterned Background */}
+      <section id="services" className="section-padding solve-section-bg border-y border-[var(--border-subtle)] relative transition-colors duration-300">
+        {/* Architectural Blueprint Pattern Grid */}
+        <div className="solve-pattern-grid" aria-hidden="true" />
+
+        {/* Ambient Moving Atmospheric Orbs */}
+        <div className="hero-moving-orb-1 absolute -top-40 -left-20 w-[550px] h-[550px] bg-[#2563FF] opacity-25 filter blur-[110px] pointer-events-none rounded-full" />
+        <div className="hero-moving-orb-2 absolute -bottom-40 -right-20 w-[600px] h-[600px] bg-[#1237A6] opacity-30 filter blur-[130px] pointer-events-none rounded-full" />
+
+        {/* Subtle Architectural Blueprint Rings & Grid Accents */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1100px] h-[1100px] pointer-events-none opacity-20 dark:opacity-25 select-none" aria-hidden="true">
+          <svg className="w-full h-full" viewBox="0 0 1100 1100" fill="none">
+            <circle cx="550" cy="550" r="220" stroke="var(--bright-blue)" strokeWidth="1" strokeDasharray="4 8" />
+            <circle cx="550" cy="550" r="380" stroke="var(--border-blue)" strokeWidth="1" />
+            <circle cx="550" cy="550" r="540" stroke="var(--border-subtle)" strokeWidth="1" strokeDasharray="6 12" />
+            <path d="M 550 0 V 1100 M 0 550 H 1100" stroke="var(--border-blue)" strokeWidth="1" strokeDasharray="3 9" strokeOpacity="0.4" />
+          </svg>
+        </div>
+
+        <div className="section-shell space-y-16 relative z-10">
           {/* Section Header */}
           <div className="max-w-3xl space-y-4">
             <span className="eyebrow">What we solve</span>
@@ -395,10 +412,10 @@ export default function Page() {
             {solveItems.map((item) => (
               <div
                 key={item.num}
-                className="rounded-[32px] px-8 sm:px-12 lg:px-14 py-10 sm:py-12 border border-[var(--border-subtle)] hover:border-[var(--border-blue)] bg-[var(--elevated)] hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between"
+                className="rounded-[32px] px-8 sm:px-12 lg:px-14 py-10 sm:py-12 border border-[var(--border-subtle)] hover:border-[var(--border-blue)] bg-[var(--elevated)]/90 backdrop-blur-md hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between shadow-[0_4px_24px_rgba(0,0,0,0.12)] hover:shadow-[0_16px_40px_rgba(37,99,255,0.14)]"
               >
                 {/* Ambient Subtle Corner Glow */}
-                <div className="absolute top-0 right-0 w-80 h-80 bg-[#2563FF] opacity-10 group-hover:opacity-20 transition-opacity duration-500 filter blur-[60px] pointer-events-none rounded-full" />
+                <div className="absolute top-0 right-0 w-80 h-80 bg-[#2563FF] opacity-10 group-hover:opacity-25 transition-opacity duration-500 filter blur-[60px] pointer-events-none rounded-full" />
 
                 <div className="space-y-6 relative z-10">
                   {/* Top Row: Pill Tag & Transform Indicator */}
@@ -438,7 +455,7 @@ export default function Page() {
 
             {/* Card 06: The Manifesto & Commitment Card */}
             <div
-              className="rounded-[32px] px-8 sm:px-12 lg:px-14 py-10 sm:py-12 border border-[var(--border-blue)] bg-gradient-to-br from-[var(--elevated)] via-[var(--surface)] to-[rgba(37,99,255,0.18)] shadow-[0_0_40px_rgba(37,99,255,0.12)] relative overflow-hidden group hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+              className="rounded-[32px] px-8 sm:px-12 lg:px-14 py-10 sm:py-12 border border-[var(--border-blue)] bg-gradient-to-br from-[var(--elevated)]/95 via-[var(--surface)]/90 to-[rgba(37,99,255,0.22)] backdrop-blur-md shadow-[0_0_50px_rgba(37,99,255,0.18)] relative overflow-hidden group hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
             >
               <div className="hero-moving-orb-1 absolute -top-20 -right-20 w-80 h-80 bg-[#2563FF] opacity-25 filter blur-[60px] pointer-events-none rounded-full" />
 
