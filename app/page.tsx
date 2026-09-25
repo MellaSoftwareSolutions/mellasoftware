@@ -503,16 +503,28 @@ export default function Page() {
               </p>
 
               {/* Showcase Card Preview */}
-              <div className="p-6 rounded-2xl bg-[var(--elevated)] border border-[var(--border-subtle)] space-y-4">
+              <a 
+                href="https://advouch.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="p-6 rounded-2xl bg-[var(--elevated)] border border-[var(--border-subtle)] hover:border-[var(--border-blue)] transition-colors space-y-4 block group cursor-pointer"
+              >
                 <div className="flex items-center justify-between text-xs font-mono text-[var(--text-secondary)]">
-                  <span className="text-[var(--bright-blue)] font-bold">AdVouch</span>
+                  <span className="text-[var(--bright-blue)] font-bold flex items-center gap-1 group-hover:underline">
+                    AdVouch <ArrowUpRight className="w-3.5 h-3.5 inline-block" />
+                  </span>
                   <span>Flagship Release</span>
                 </div>
                 <div className="text-xl font-bold text-[var(--text-primary)]">Vouched advertising & verified identity marketplace.</div>
-              </div>
+              </a>
 
               <div>
-                <a href="#case-study" className="btn-primary btn-lg">
+                <a 
+                  href="https://advouch.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn-primary btn-lg"
+                >
                   Open AdVouch <ArrowUpRight className="w-4 h-4" />
                 </a>
               </div>
@@ -581,7 +593,12 @@ export default function Page() {
                 Advertising with a <em>little more proof.</em>
               </p>
             </div>
-            <a href="#contact" className="btn-primary btn-lg">
+            <a 
+              href="https://advouch.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-primary btn-lg"
+            >
               Open AdVouch <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>
@@ -590,10 +607,16 @@ export default function Page() {
           <div className="bg-[var(--case-bg)] border border-[var(--border-blue)] rounded-[32px] p-6 sm:p-10 relative overflow-hidden transition-all duration-300">
             <div className="bg-[var(--case-inner)] border border-[var(--border-subtle)] rounded-2xl p-6 md:p-10 space-y-8">
               <div className="flex items-center justify-between pb-6 border-b border-[var(--border-subtle)]">
-                <div className="flex items-center gap-3 font-bold text-lg text-[var(--text-primary)]">
+                <a 
+                  href="https://advouch.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-3 font-bold text-lg text-[var(--text-primary)] hover:text-[var(--bright-blue)] transition-colors group cursor-pointer"
+                >
                   <img src="/blue icon.svg" alt="AdVouch emblem" className="w-6 h-6" />
                   <span>AdVouch</span>
-                </div>
+                  <ArrowUpRight className="w-4 h-4 opacity-60 group-hover:opacity-100 transition-opacity" />
+                </a>
                 <div className="hidden sm:flex items-center gap-6 text-xs font-mono text-[var(--text-secondary)]">
                   <span>Discover Ads</span>
                   <span>Businesses</span>
