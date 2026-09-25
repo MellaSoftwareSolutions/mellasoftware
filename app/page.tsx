@@ -31,9 +31,9 @@ export default function Page() {
       link: 'https://advouch.com',
       visual: (
         <div className="w-full h-full min-h-[220px] rounded-2xl overflow-hidden relative group border border-[var(--border-blue)]">
-          <img 
-            src="/advouch-card.jpg" 
-            alt="AdVouch Escrow Marketplace Visual" 
+          <img
+            src="/vouch-card.jpg"
+            alt="AdVouch Escrow Marketplace Visual"
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
           />
         </div>
@@ -196,7 +196,7 @@ export default function Page() {
       {/* 2. Cinematic Hero Section with Full-Bleed Addis Ababa Skyline Image */}
       <section 
         className="relative w-full min-h-[820px] md:min-h-[960px] flex items-center justify-center overflow-hidden bg-cover bg-center pt-24 pb-10 md:pt-32 md:pb-14"
-        style={{ backgroundImage: "url('/addis-ababa-skyline.jpeg')" }}
+        style={{ backgroundImage: "url('/aa-skyline.jpeg')" }}
       >
         <div className="glow-hero-bg" />
 

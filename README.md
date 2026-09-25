@@ -94,8 +94,8 @@ mellasoftware/
 │   ├── page.tsx            # Main application homepage
 │   └── icon.svg            # Dynamic SVG favicon
 ├── public/                 # Static assets, logos, and case study visuals
-│   ├── addis-ababa-skyline.jpeg
-│   ├── advouch-card.jpg
+│   ├── aa-skyline.jpeg
+│   ├── vouch-card.jpg
 │   ├── blue icon.svg
 │   ├── mella-clinic.jpeg
 │   ├── mella-menu.jpeg
