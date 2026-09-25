@@ -118,6 +118,17 @@ The application is optimized for deployment on [Vercel](https://vercel.com/):
 3. Next.js will automatically detect build settings (`pnpm build`).
 4. Set up custom production domains (e.g. `mellasoftware.com`).
 
+### Docker
+
+A multi-stage `Dockerfile` is included for self-hosting outside of Vercel, using the Next.js [standalone output](https://nextjs.org/docs/app/api-reference/config/next-config-js/output):
+
+```bash
+docker build -t mellasoftware .
+docker run -p 3033:3033 mellasoftware
+```
+
+Open [http://localhost:3033](http://localhost:3033) to view it.
+
 ---
 
 ## 📬 Contact & Inquiries
