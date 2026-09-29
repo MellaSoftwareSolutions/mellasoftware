@@ -1,0 +1,33 @@
+# Mella Software Solutions PLC
+
+> Independent software studio based in Addis Ababa, Ethiopia. We design, build, launch, and operate web and mobile software products for ambitious companies and in-house ventures.
+
+## About Mella Software
+- **Legal Name**: Mella Software Solutions PLC
+- **Common Names**: Mella Software, Mella
+- **Founded / Active**: Addis Ababa, Ethiopia
+- **Website**: https://mellasoftware.com
+- **Contact Email**: hello@mellasoftware.com
+- **Phone**: +251 944 741 857 / +251 713 184 474
+- **Working Hours**: Monday–Friday, 09:00–18:00 EAT (UTC+3)
+
+## Core Products & Ventures
+- **AdVouch** (https://advouch.com): An in-house live advertising marketplace with verified identity authentication, campaign escrow payments, and automated payout settlements.
+- **Mizan Net**: AI-powered legal intelligence and statutory research advisor built specifically for Ethiopian legal precedents and statutory analysis.
+- **School Management System**: Integrated educational ERP platform automating student records, grading analytics, and administrative operations.
+- **Clinic Management System**: Clinical healthcare EHR platform managing patient electronic medical records, digital appointments, prescriptions, and billing.
+- **Restaurant Management System**: Hospitality point-of-sale (POS) and real-time kitchen order dispatch (KOT) system with table inventory management.
+
+## Capabilities & Services
+- Custom Web & Mobile Application Development
+- SaaS & Multi-Tenant Cloud Architecture
+- AI Integration & Automated Business Systems
+- Legacy System Modernization & Codebase Refactoring
+- Embedded Dedicated Engineering Teams (Design, Full-Stack Engineering, Production Operations)
+- Continuous Product Maintenance, 24/7 Monitoring, and DevOps
+
+## Engineering Methodology
+- **Understand**: Deep domain exploration of user problems, workflows, and constraints.
+- **Build**: Integrated product design and agile software engineering with early working builds.
+- **Ship**: Reliable production deployment pipelines and infrastructure management.
+- **Improve**: Ongoing maintenance, feature evolution, and post-launch partnership.
