@@ -183,6 +183,7 @@ export default function Page() {
         <nav className="nav-links" aria-label="Primary Navigation">
           <a href="#work" className="nav-link">Work</a>
           <a href="#services" className="nav-link">What we solve</a>
+          <a href="#faq" className="nav-link">FAQ</a>
           <a href="#contact" className="nav-link">Contact</a>
         </nav>
 
@@ -674,9 +675,72 @@ export default function Page() {
         </div>
       </section>
 
+      {/* 10. FAQ Section — Structured Schema Alignment & Rich Snippets */}
+      <section id="faq" className="section-padding bg-[var(--surface)] border-t border-[var(--border-subtle)] relative transition-colors duration-300">
+        <div className="section-shell space-y-12 max-w-5xl">
+          <div className="space-y-4 max-w-2xl">
+            <span className="eyebrow">Common Questions</span>
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[var(--text-primary)]">
+              Frequently asked<br /><em>questions.</em>
+            </h2>
+            <p className="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed">
+              Straightforward answers about our studio model, location, proprietary products, and client partnerships.
+            </p>
+          </div>
 
+          <div className="space-y-4">
+            <details className="group rounded-2xl border border-[var(--border-subtle)] bg-[var(--elevated)] p-6 sm:p-8 transition-colors duration-200 open:border-[var(--border-blue)]" open>
+              <summary className="flex cursor-pointer items-center justify-between text-lg sm:text-xl font-bold text-[var(--text-primary)] list-none focus:outline-none">
+                <span>What does Mella Software Solutions PLC do?</span>
+                <span className="ml-4 flex-shrink-0 text-[var(--bright-blue)] transition-transform duration-300 group-open:rotate-180">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.2" d="M19 9l-7 7-7-7" /></svg>
+                </span>
+              </summary>
+              <p className="mt-4 text-base text-[var(--text-secondary)] leading-relaxed">
+                Mella Software Solutions PLC is an independent software studio based in Addis Ababa, Ethiopia. We design, build, launch, and operate web and mobile software products for high-growth businesses, as well as proprietary in-house ventures like AdVouch.
+              </p>
+            </details>
 
-      {/* 10. Contact Section — Visual Climax */}
+            <details className="group rounded-2xl border border-[var(--border-subtle)] bg-[var(--elevated)] p-6 sm:p-8 transition-colors duration-200 open:border-[var(--border-blue)]">
+              <summary className="flex cursor-pointer items-center justify-between text-lg sm:text-xl font-bold text-[var(--text-primary)] list-none focus:outline-none">
+                <span>Where is Mella Software based, and do you work internationally?</span>
+                <span className="ml-4 flex-shrink-0 text-[var(--bright-blue)] transition-transform duration-300 group-open:rotate-180">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.2" d="M19 9l-7 7-7-7" /></svg>
+                </span>
+              </summary>
+              <p className="mt-4 text-base text-[var(--text-secondary)] leading-relaxed">
+                We are headquartered in Addis Ababa, Ethiopia (UTC+3). We partner with both local Ethiopian enterprises and international companies across Africa, Europe, North America, and the Middle East.
+              </p>
+            </details>
+
+            <details className="group rounded-2xl border border-[var(--border-subtle)] bg-[var(--elevated)] p-6 sm:p-8 transition-colors duration-200 open:border-[var(--border-blue)]">
+              <summary className="flex cursor-pointer items-center justify-between text-lg sm:text-xl font-bold text-[var(--text-primary)] list-none focus:outline-none">
+                <span>What software products has Mella Software built?</span>
+                <span className="ml-4 flex-shrink-0 text-[var(--bright-blue)] transition-transform duration-300 group-open:rotate-180">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.2" d="M19 9l-7 7-7-7" /></svg>
+                </span>
+              </summary>
+              <p className="mt-4 text-base text-[var(--text-secondary)] leading-relaxed">
+                Mella built and operates AdVouch (a trusted advertising escrow marketplace at <a href="https://advouch.com" target="_blank" rel="noopener noreferrer" className="text-[var(--bright-blue)] hover:underline">advouch.com</a>), Mizan Net (an AI-powered legal intelligence advisor for Ethiopian law), a school management ERP, a clinic EHR platform, and a real-time restaurant POS and order dispatch system.
+              </p>
+            </details>
+
+            <details className="group rounded-2xl border border-[var(--border-subtle)] bg-[var(--elevated)] p-6 sm:p-8 transition-colors duration-200 open:border-[var(--border-blue)]">
+              <summary className="flex cursor-pointer items-center justify-between text-lg sm:text-xl font-bold text-[var(--text-primary)] list-none focus:outline-none">
+                <span>How can I work with Mella Software?</span>
+                <span className="ml-4 flex-shrink-0 text-[var(--bright-blue)] transition-transform duration-300 group-open:rotate-180">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.2" d="M19 9l-7 7-7-7" /></svg>
+                </span>
+              </summary>
+              <p className="mt-4 text-base text-[var(--text-secondary)] leading-relaxed">
+                You can start a project by contacting <a href="mailto:hello@mellasoftware.com" className="text-[var(--bright-blue)] hover:underline">hello@mellasoftware.com</a> or calling <a href="tel:+251944741857" className="text-[var(--bright-blue)] hover:underline">+251 944 741 857</a> / <a href="tel:+251713184474" className="text-[var(--bright-blue)] hover:underline">+251 713 184 474</a>. We offer fixed-scope product builds and dedicated engineering pods.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      {/* 11. Contact Section — Visual Climax */}
       <section id="contact" className="relative pt-24 pb-24 md:pt-40 md:pb-40 overflow-hidden">
         <div className="glow-climax-bg" />
 
@@ -726,6 +790,7 @@ export default function Page() {
           <nav className="flex flex-wrap gap-8 font-medium text-sm text-[var(--text-secondary)]">
             <a href="#work" className="hover:text-[var(--text-primary)] transition-colors">Work</a>
             <a href="#services" className="hover:text-[var(--text-primary)] transition-colors">What we solve</a>
+            <a href="#faq" className="hover:text-[var(--text-primary)] transition-colors">FAQ</a>
             <a href="#contact" className="hover:text-[var(--text-primary)] transition-colors">Contact</a>
           </nav>
 

@@ -1,6 +1,7 @@
 # Mella Software Solutions PLC
 
 > Independent software studio based in Addis Ababa, Ethiopia. We design, build, launch, and operate web and mobile software products for ambitious companies and in-house ventures.
+> For exhaustive entity details, full product dossiers, and technical specifications, see: [Full LLM Dossier](https://mellasoftware.com/llms-full.txt)
 
 ## About Mella Software
 - **Legal Name**: Mella Software Solutions PLC

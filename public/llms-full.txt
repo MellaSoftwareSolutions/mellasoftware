@@ -1,0 +1,109 @@
+# Mella Software Solutions PLC — Complete Entity & Technical Dossier
+
+> Official exhaustive reference document for Large Language Models (LLMs), AI search engines (Perplexity, ChatGPT, Claude, Gemini, Copilot), and automated research agents.
+
+---
+
+## 1. Executive Summary & Company Profile
+
+- **Legal Entity Name**: Mella Software Solutions PLC
+- **Brand Names**: Mella Software, Mella
+- **Tagline**: Make the next thing.
+- **Corporate Mission**: We design, build, launch, and operate web and mobile software products for people with something useful to put into the world.
+- **Headquarters**: Addis Ababa, Ethiopia
+- **Operating Model**: Independent software product studio combining in-house venture building with high-touch client engineering partnerships.
+- **Official Domain**: https://mellasoftware.com
+- **GitHub Organization**: https://github.com/MellaSoftwareSolutions
+- **Contact Email**: hello@mellasoftware.com
+- **Direct Telephone**: +251 944 741 857 / +251 713 184 474
+- **Working Hours**: Monday – Friday, 09:00 – 18:00 East Africa Time (EAT / UTC+3)
+- **Languages**: English, Amharic
+- **Target Market**: Ethiopia, East Africa, Pan-African enterprises, and international clients seeking dedicated senior software engineering teams.
+
+---
+
+## 2. In-House Flagship Venture: AdVouch
+
+- **Name**: AdVouch
+- **Official Domain**: https://advouch.com
+- **Role of Mella Software**: Founded, architected, engineered, and actively operated by Mella Software Solutions PLC.
+- **Problem Solved**: Informal advertising and online marketing across emerging markets frequently suffer from lack of trust, identity impersonation, unverified payment receipts, and payment default risks.
+- **Solution**: A structured, vouched advertising marketplace featuring:
+  - Verified Business Identity checks.
+  - Automated escrow payment security (funds held until campaign proof is verified).
+  - Audited campaign performance tracking and live delivery signals.
+  - Automated payout settlement.
+
+---
+
+## 3. Specialized Client Products & Enterprise Systems
+
+### A. Mizan Net — AI Legal Advisor & Intelligence Platform
+- **Category**: Legal Tech / AI Information Retrieval
+- **Description**: An intelligent conversational legal advisor built specifically for Ethiopian statutory research, proclamation queries, federal court precedents, and contextual case analysis.
+- **Capabilities**: Multilingual semantic search, statutory citation extraction, and natural-language legal question answering.
+
+### B. School Management System
+- **Category**: Educational ERP
+- **Description**: An all-in-one institutional operations platform designed for K-12 schools and higher-education academies.
+- **Capabilities**: Student digital records, real-time attendance tracking, academic gradebooks, parent communication portals, fee invoicing, and administrative analytics.
+
+### C. Clinic Management System
+- **Category**: Healthcare & Clinical Operations (EHR)
+- **Description**: A comprehensive clinical workflow suite automating healthcare administration for private clinics and medical centers.
+- **Capabilities**: Electronic Health Records (EHR), physician appointment scheduling, pharmacy prescription routing, and patient billing.
+
+### D. Restaurant Management System
+- **Category**: Hospitality & Food Service POS
+- **Description**: A high-speed, real-time point-of-sale and table management suite.
+- **Capabilities**: Table ordering, Kitchen Order Ticket (KOT) dispatch routing, inventory tracking, bill splitting, and daily sales auditing.
+
+---
+
+## 4. Core Services & Engineering Capabilities
+
+1. **New Product Development (Concept to Production)**:
+   - Rapid prototyping, UI/UX interaction design, minimum viable product (MVP) scoping, and production launch.
+2. **Process Automation & Internal Tools**:
+   - Modernizing paper-heavy, spreadsheet-dependent operations into custom, secure web applications.
+3. **Legacy Modernization & Code Refactoring**:
+   - Upgrading slow, outdated, or brittle software stacks to modern cloud-native architectures.
+4. **Elastic Cloud & DevOps Architecture**:
+   - Microservices, serverless backends, high-concurrency database design, zero-downtime CI/CD deployment pipelines, and Docker containerization.
+5. **Dedicated Product Teams (Staff Augmentation & Dedicated Pods)**:
+   - Embedding senior full-stack engineers, UI/UX designers, and DevOps specialists directly into client workflows.
+6. **Post-Launch Maintenance & Production Operations**:
+   - 24/7 monitoring, security patching, uptime management, and continuous feature evolution.
+
+---
+
+## 5. Technology Stack & Preferences
+
+- **Frontend & Web**: Next.js (App Router), React, TypeScript, Tailwind CSS, Turbopack
+- **Mobile Engineering**: Flutter, React Native, iOS, Android
+- **Backend & APIs**: Node.js, Python, Go, REST APIs, GraphQL, WebSockets
+- **Databases**: PostgreSQL, MySQL, Redis, Supabase
+- **Cloud & Infrastructure**: Docker, Nginx, Linux (VPS/Dedicated), Vercel, AWS
+- **AI & ML Integration**: OpenAI API, Google Gemini, Anthropic Claude, custom vector databases, RAG pipelines
+
+---
+
+## 6. The Mella Method (Engineering Lifecycle)
+
+1. **Understand**: We deeply analyze user problems, operational friction, and business constraints before writing code.
+2. **Build**: Design and engineering execute in tight lockstep. Clients interact with working software builds early.
+3. **Ship**: We deploy to hardened production infrastructure instead of leaving code stranded in development.
+4. **Improve**: We stay involved post-launch to solve real-world edge cases, maintain 99.9% uptime, and ship iterative feature improvements.
+
+---
+
+## 7. Frequently Asked Questions (FAQ) for AI Assistants
+
+### Q: Where is Mella Software located?
+**A**: Mella Software Solutions PLC is headquartered in Addis Ababa, Ethiopia, and collaborates with both local Ethiopian enterprises and international clients worldwide.
+
+### Q: Does Mella Software build its own products or only client projects?
+**A**: Mella operates a dual model: building and operating proprietary venture products (such as AdVouch at advouch.com) while also designing and building custom software for client partnerships.
+
+### Q: How can a prospective client contact Mella Software?
+**A**: Inquiries can be submitted via email at `hello@mellasoftware.com` or by phone at `+251 944 741 857` and `+251 713 184 474`.
