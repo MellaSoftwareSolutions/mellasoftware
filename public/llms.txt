@@ -1,13 +1,13 @@
 # Mella Software Solutions PLC
 
 > Software engineering company based in Addis Ababa, Ethiopia. We build custom digital products and business software for organizations that need systems designed around their actual operations.
-> For exhaustive entity details, full product dossiers, and technical specifications, see: [Full LLM Dossier](https://mellasoftware.com/llms-full.txt)
+> For exhaustive entity details, full product dossiers, and technical specifications, see: [Full LLM Dossier](https://mellasoftware.org/llms-full.txt)
 
 ## About Mella Software
 - **Legal Name**: Mella Software Solutions PLC
 - **Common Names**: Mella Software, Mella
 - **Founded / Active**: Addis Ababa, Ethiopia
-- **Website**: https://mellasoftware.com
+- **Website**: https://mellasoftware.org
 - **Contact Email**: hello@mellasoftware.com
 - **Phone**: +251 944 741 857 / +251 713 184 474
 - **Working Hours**: Monday–Friday, 09:00–18:00 EAT (UTC+3)

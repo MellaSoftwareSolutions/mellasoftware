@@ -20,6 +20,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://mellasoftware.com/sitemap.xml',
+    sitemap: 'https://mellasoftware.org/sitemap.xml',
   }
 }

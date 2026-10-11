@@ -12,7 +12,7 @@
 - **Corporate Mission**: From customer-facing applications to internal business systems, Mella designs and develops software around your workflows, requirements, and goals.
 - **Headquarters**: Addis Ababa, Ethiopia
 - **Operating Model**: Software engineering company combining in-house product development (like AdVouch) with dedicated client engineering partnerships.
-- **Official Domain**: https://mellasoftware.com
+- **Official Domain**: https://mellasoftware.org
 - **GitHub Organization**: https://github.com/MellaSoftwareSolutions
 - **Contact Email**: hello@mellasoftware.com
 - **Direct Telephone**: +251 944 741 857 / +251 713 184 474

@@ -5,7 +5,7 @@ import './globals.css'
 
 const sora = Sora({ subsets: ['latin'], variable: '--font-sora' })
 
-const siteUrl = 'https://mellasoftware.com'
+const siteUrl = 'https://mellasoftware.org'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
