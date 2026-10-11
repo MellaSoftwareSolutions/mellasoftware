@@ -24,9 +24,9 @@ export default function Page() {
   const workItems = [
     {
       num: '01',
-      tag: 'In-house · Live Marketplace',
+      tag: 'In-house · Advertising Escrow',
       title: 'AdVouch',
-      desc: 'A trusted advertising marketplace featuring verified business identity checks, campaign escrow, and automated settlement.',
+      desc: 'An advertising escrow and identity verification platform protecting campaign transactions, holding payments until deliverables and performance are confirmed.',
       flagship: true,
       link: 'https://advouch.com',
       visual: (
@@ -41,9 +41,9 @@ export default function Page() {
     },
     {
       num: '02',
-      tag: 'Client · Legal AI',
+      tag: 'Legal Information System',
       title: 'Mizan Net',
-      desc: 'An AI-powered legal advisor and intelligence platform built specifically for Ethiopian statutory research, legal precedent, and case analysis.',
+      desc: 'A specialized legal intelligence platform built for Ethiopian statutory research, proclamation queries, and Federal Supreme Court precedent analysis.',
       flagship: false,
       visual: (
         <div className="w-full h-full min-h-[190px] rounded-2xl overflow-hidden relative group border border-[var(--border-blue)]">
@@ -57,9 +57,9 @@ export default function Page() {
     },
     {
       num: '03',
-      tag: 'Client · Enterprise Web',
+      tag: 'Education Operations',
       title: 'School Management System',
-      desc: 'An integrated educational ERP streamlining student records, attendance tracking, gradebook analytics, and administrative workflows.',
+      desc: 'An operations platform built for schools to manage student registries, academic grading, attendance records, and fee collection in one unified system.',
       flagship: false,
       visual: (
         <div className="w-full h-full min-h-[190px] rounded-2xl overflow-hidden relative group border border-[var(--border-blue)]">
@@ -73,9 +73,9 @@ export default function Page() {
     },
     {
       num: '04',
-      tag: 'Client · Healthcare',
+      tag: 'Healthcare Workflows',
       title: 'Clinic Management System',
-      desc: 'A comprehensive clinical operations platform automating electronic health records, appointment scheduling, prescription tracking, and billing.',
+      desc: 'A clinical management system streamlining patient electronic health records, practitioner consultation queues, prescription tracking, and billing.',
       flagship: false,
       visual: (
         <div className="w-full h-full min-h-[190px] rounded-2xl overflow-hidden relative group border border-[var(--border-blue)]">
@@ -89,9 +89,9 @@ export default function Page() {
     },
     {
       num: '05',
-      tag: 'Client · Hospitality',
+      tag: 'Hospitality & Retail',
       title: 'Restaurant Management System',
-      desc: 'A real-time hospitality suite powering point-of-sale operations, kitchen order dispatch, table reservations, and inventory management.',
+      desc: 'A point-of-sale and kitchen dispatch system built for table management, order routing, split billing, and real-time inventory tracking.',
       flagship: false,
       visual: (
         <div className="w-full h-full min-h-[190px] rounded-2xl overflow-hidden relative group border border-[var(--border-blue)]">
@@ -108,43 +108,43 @@ export default function Page() {
   const solveItems = [
     {
       num: '01',
-      tag: 'You have an idea',
-      headlinePrefix: 'You know what to build. ',
-      headlineItalic: 'We make it real.',
-      desc: 'We turn your concept into a live product people can actually use.',
-      transform: 'Concept → Live MVP',
+      tag: 'Custom Digital Products',
+      headlinePrefix: 'You need a purpose-built product. ',
+      headlineItalic: 'We engineer it to spec.',
+      desc: 'From initial workflow mapping to production launch, we build web and mobile applications tailored to your exact operational requirements.',
+      transform: 'Concept → Production System',
     },
     {
       num: '02',
-      tag: 'Manual processes',
-      headlinePrefix: 'Your team spends time ',
-      headlineItalic: 'software should handle.',
-      desc: 'We bring scattered spreadsheets and tools into one automated system.',
-      transform: 'Manual Tasks → Unified Flow',
+      tag: 'Scattered Operations',
+      headlinePrefix: 'Spreadsheets and paperwork ',
+      headlineItalic: 'have reached their limits.',
+      desc: 'We consolidate fragmented documents, messaging chats, and manual tracking into a single, structured internal business system.',
+      transform: 'Manual Spreadsheets → Unified Business Software',
     },
     {
       num: '03',
-      tag: 'Current software slow',
-      headlinePrefix: 'Your software is slowing ',
-      headlineItalic: 'your business down.',
-      desc: "We fix bottlenecks, modernize outdated UX, or rebuild what's broken.",
-      transform: 'Sluggish Legacy → Fast & Modern',
+      tag: 'Legacy Bottlenecks',
+      headlinePrefix: 'Your existing software is ',
+      headlineItalic: 'holding back daily operations.',
+      desc: 'We resolve performance bottlenecks, modernize outdated user interfaces, and rebuild fragile systems for high reliability.',
+      transform: 'Brittle Legacy Systems → Reliable Modern Stack',
     },
     {
       num: '04',
-      tag: 'Business growing',
-      headlinePrefix: "What worked before ",
-      headlineItalic: "doesn't work anymore.",
-      desc: 'We build scalable cloud architecture that expands with your growth.',
-      transform: 'Capacity Limits → Elastic Scale',
+      tag: 'Operational Scaling',
+      headlinePrefix: 'Workflows that worked before ',
+      headlineItalic: 'struggle with growing volume.',
+      desc: 'We re-architect databases, permissions, and server capacity so your software handles higher transaction volumes without disruption.',
+      transform: 'Operational Limits → Resilient Capacity',
     },
     {
       num: '05',
-      tag: 'Need real ownership',
-      headlinePrefix: "Never left stranded with ",
-      headlineItalic: 'a finished project.',
-      desc: 'We stay on board for ongoing maintenance, proactive fixes, and new features.',
-      transform: 'One-off Handoff → Dedicated Team',
+      tag: 'Direct Engineering Access',
+      headlinePrefix: 'Work directly with the ',
+      headlineItalic: 'engineers building your software.',
+      desc: 'No layers of account managers. You get direct access to the developers writing your code, clear project scope, and ongoing technical support.',
+      transform: 'Handoff Uncertainty → Direct Engineering Partnership',
     },
   ]
 
@@ -152,22 +152,22 @@ export default function Page() {
     {
       num: '01',
       title: 'Understand',
-      desc: 'We learn the problem, users, constraints, and what actually needs to be built.',
+      desc: 'We study your actual business operations, user roles, and requirements before writing any code.',
     },
     {
       num: '02',
       title: 'Build',
-      desc: 'Design and engineering happen together. You see working software early.',
+      desc: 'Design and engineering happen together. You review working software early and guide its direction.',
     },
     {
       num: '03',
-      title: 'Ship',
-      desc: 'We get it into production instead of keeping it trapped in development.',
+      title: 'Deploy',
+      desc: 'We test and launch the software into your production environment with zero disruption to daily work.',
     },
     {
       num: '04',
-      title: 'Improve',
-      desc: 'We stay involved to fix, maintain, and build the next version.',
+      title: 'Support',
+      desc: 'We remain available for maintenance, system adjustments, and building new capabilities as operations evolve.',
     },
   ]
 
@@ -189,7 +189,7 @@ export default function Page() {
 
         <div className="flex items-center gap-3">
           <a href="#contact" className="btn-pill btn-md text-xs sm:text-sm px-4 sm:px-6 py-2 sm:py-2.5">
-            Start a project <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+            Discuss a project <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
           </a>
         </div>
       </header>
@@ -210,22 +210,22 @@ export default function Page() {
 
             {/* Simplistic Centered Content */}
             <div className="relative z-10 text-center flex flex-col items-center justify-center max-w-3xl mx-auto space-y-6 sm:space-y-8 py-2 sm:py-4">
-              <span className="eyebrow mx-auto tracking-widest text-[0.7rem] sm:text-xs font-mono text-center">Independent software studio · Addis Ababa</span>
+              <span className="eyebrow mx-auto tracking-widest text-[0.7rem] sm:text-xs font-mono text-center">Software engineering company · Addis Ababa</span>
 
               <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[0.98] sm:leading-[0.95] text-[var(--text-primary)]">
-                Make the<br /><em>next thing.</em>
+                Software built around<br /><em>how your business works.</em>
               </h1>
 
               <p className="text-base sm:text-lg md:text-xl text-[var(--text-secondary)] font-normal leading-relaxed max-w-xl mx-auto">
-                We design, build, and run software products for people with something useful to put into the world.
+                From customer-facing applications to internal business systems, Mella designs and develops software around your workflows, requirements, and goals.
               </p>
 
               <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 pt-2">
                 <a href="#contact" className="btn-primary btn-lg text-sm sm:text-base px-6 sm:px-8 py-3.5 sm:py-4">
-                  Start a project <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
+                  Discuss a project <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
                 <a href="#work" className="btn-ghost btn-lg text-sm sm:text-base px-6 sm:px-8 py-3.5 sm:py-4">
-                  See our work <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
+                  Explore our work <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
               </div>
             </div>
@@ -241,11 +241,11 @@ export default function Page() {
             <div className="space-y-3">
               <span className="eyebrow">Selected work / 05</span>
               <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-[var(--text-primary)]">
-                Things we&apos;ve<br /><em>made useful.</em>
+                Software built for<br /><em>actual operations.</em>
               </h2>
             </div>
             <p className="text-lg md:text-xl text-[var(--text-secondary)] max-w-sm">
-              From first thought to daily tool.
+              Purpose-built systems designed around real business workflows.
             </p>
           </div>
 
@@ -475,10 +475,10 @@ export default function Page() {
 
           <div className="pt-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <p className="text-base sm:text-lg text-[var(--text-secondary)] max-w-xl">
-              Ready to talk through your product requirements or technical challenges?
+              Ready to talk through your product requirements or operational challenges?
             </p>
             <a href="#contact" className="btn-primary btn-lg w-full sm:w-auto justify-center">
-              Start a project <ArrowUpRight className="w-5 h-5" />
+              Discuss a project <ArrowUpRight className="w-5 h-5" />
             </a>
           </div>
         </div>
@@ -495,12 +495,12 @@ export default function Page() {
               <div className="space-y-4">
                 <span className="eyebrow">Our products</span>
                 <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-[var(--text-primary)]">
-                  Built with<br /><em>skin in it.</em>
+                  Software we build<br /><em>and operate.</em>
                 </h3>
               </div>
 
               <p className="text-lg text-[var(--text-secondary)] leading-relaxed max-w-lg">
-                We build, launch, and operate our own products. The lessons make every client project sharper.
+                We design, launch, and operate our own software products like AdVouch. Real-world operational experience makes our client work stronger.
               </p>
 
               {/* Showcase Card Preview */}
@@ -536,22 +536,22 @@ export default function Page() {
               <div className="space-y-4">
                 <span className="eyebrow">Our partnerships</span>
                 <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-[var(--text-primary)]">
-                  Your problem.<br /><em>Our team.</em>
+                  Your workflows.<br /><em>Our engineering.</em>
                 </h3>
               </div>
 
               <p className="text-lg text-[var(--text-secondary)] leading-relaxed max-w-lg">
-                Software built around your business — from a focused first release to an ongoing product team.
+                Software built around your actual operations — with direct access to the engineering team and clear project scope.
               </p>
 
               <div className="p-6 rounded-2xl bg-[var(--elevated)] border border-[var(--border-subtle)] space-y-4">
                 <div className="text-xs font-mono text-[var(--text-muted)] uppercase tracking-wider">Engineering Model</div>
-                <div className="text-xl font-bold text-[var(--text-primary)]">Dedicated design & development teams embedded in your workflow.</div>
+                <div className="text-xl font-bold text-[var(--text-primary)]">Custom project delivery and dedicated engineering teams tailored to your business requirements.</div>
               </div>
 
               <div>
                 <a href="#contact" className="btn-ghost btn-lg">
-                  Work with us <ArrowUpRight className="w-4 h-4" />
+                  Discuss a project <ArrowUpRight className="w-4 h-4" />
                 </a>
               </div>
             </div>
@@ -563,9 +563,9 @@ export default function Page() {
       <section className="section-padding bg-[var(--surface)] border-y border-[var(--border-subtle)] relative transition-colors duration-300">
         <div className="section-shell space-y-16">
           <div className="space-y-3">
-            <span className="eyebrow">The Mella method</span>
+            <span className="eyebrow">How we work</span>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[var(--text-primary)]">
-              Less theatre.<br /><em>More shipping.</em>
+              Clear scope.<br /><em>Direct execution.</em>
             </h2>
           </div>
 
@@ -656,19 +656,19 @@ export default function Page() {
             <div className="triad-col space-y-2">
               <span className="text-xs font-mono text-[var(--bright-blue)] uppercase font-bold tracking-wider">The problem</span>
               <p className="text-base text-[var(--text-secondary)] leading-relaxed">
-                Informal advertising made trust, identity, and campaign payments difficult to verify.
+                Informal business transactions often suffer from lack of trust, unverified credentials, and payment risks.
               </p>
             </div>
             <div className="triad-col space-y-2">
               <span className="text-xs font-mono text-[var(--bright-blue)] uppercase font-bold tracking-wider">The product</span>
               <p className="text-base text-[var(--text-secondary)] leading-relaxed">
-                Discover Ads · Businesses · Campaigns · Identity · Payments
+                A purpose-built marketplace with business verification, milestone escrow, and automated settlement.
               </p>
             </div>
             <div className="triad-col space-y-2">
               <span className="text-xs font-mono text-[var(--bright-blue)] uppercase font-bold tracking-wider">The result</span>
               <p className="text-base text-[var(--text-secondary)] leading-relaxed">
-                A live product built and operated by Mella.
+                A live production platform engineered and operated by Mella at advouch.com.
               </p>
             </div>
           </div>
@@ -684,7 +684,7 @@ export default function Page() {
               Frequently asked<br /><em>questions.</em>
             </h2>
             <p className="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed">
-              Straightforward answers about our studio model, location, proprietary products, and client partnerships.
+              Straightforward answers about our engineering capabilities, location, business software, and client collaboration.
             </p>
           </div>
 
@@ -697,19 +697,19 @@ export default function Page() {
                 </span>
               </summary>
               <p className="mt-4 text-base text-[var(--text-secondary)] leading-relaxed">
-                Mella Software Solutions PLC is an independent software studio based in Addis Ababa, Ethiopia. We design, build, launch, and operate web and mobile software products for high-growth businesses, as well as proprietary in-house ventures like AdVouch.
+                Mella Software Solutions PLC is a software engineering company based in Addis Ababa, Ethiopia. We design, build, and maintain custom web applications, mobile apps, and business management systems for organizations that need software tailored to their actual workflows.
               </p>
             </details>
 
             <details className="group rounded-2xl border border-[var(--border-subtle)] bg-[var(--elevated)] p-6 sm:p-8 transition-colors duration-200 open:border-[var(--border-blue)]">
               <summary className="flex cursor-pointer items-center justify-between text-lg sm:text-xl font-bold text-[var(--text-primary)] list-none focus:outline-none">
-                <span>Where is Mella Software based, and do you work internationally?</span>
+                <span>Where is Mella Software based, and who do you work with?</span>
                 <span className="ml-4 flex-shrink-0 text-[var(--bright-blue)] transition-transform duration-300 group-open:rotate-180">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.2" d="M19 9l-7 7-7-7" /></svg>
                 </span>
               </summary>
               <p className="mt-4 text-base text-[var(--text-secondary)] leading-relaxed">
-                We are headquartered in Addis Ababa, Ethiopia (UTC+3). We partner with both local Ethiopian enterprises and international companies across Africa, Europe, North America, and the Middle East.
+                We are headquartered in Addis Ababa, Ethiopia (UTC+3). We work with local Ethiopian businesses and international organizations that need dependable custom software engineering with direct developer communication.
               </p>
             </details>
 
@@ -721,7 +721,7 @@ export default function Page() {
                 </span>
               </summary>
               <p className="mt-4 text-base text-[var(--text-secondary)] leading-relaxed">
-                Mella built and operates AdVouch (a trusted advertising escrow marketplace at <a href="https://advouch.com" target="_blank" rel="noopener noreferrer" className="text-[var(--bright-blue)] hover:underline">advouch.com</a>), Mizan Net (an AI-powered legal intelligence advisor for Ethiopian law), a school management ERP, a clinic EHR platform, and a real-time restaurant POS and order dispatch system.
+                We build customer-facing web and mobile applications as well as internal operational systems — including clinic management software (EHR), school management systems (ERP), restaurant point-of-sale (POS) platforms, legal intelligence tools, and escrow marketplaces like AdVouch (at <a href="https://advouch.com" target="_blank" rel="noopener noreferrer" className="text-[var(--bright-blue)] hover:underline">advouch.com</a>).
               </p>
             </details>
 
@@ -733,7 +733,7 @@ export default function Page() {
                 </span>
               </summary>
               <p className="mt-4 text-base text-[var(--text-secondary)] leading-relaxed">
-                You can start a project by contacting <a href="mailto:hello@mellasoftware.com" className="text-[var(--bright-blue)] hover:underline">hello@mellasoftware.com</a> or calling <a href="tel:+251944741857" className="text-[var(--bright-blue)] hover:underline">+251 944 741 857</a> / <a href="tel:+251713184474" className="text-[var(--bright-blue)] hover:underline">+251 713 184 474</a>. We offer fixed-scope product builds and dedicated engineering pods.
+                We provide direct access to the engineering team with clear project scopes and realistic timelines. Clients can work with us on defined-scope system builds or through dedicated engineering arrangements. You can contact us at <a href="mailto:hello@mellasoftware.com" className="text-[var(--bright-blue)] hover:underline">hello@mellasoftware.com</a> or call <a href="tel:+251944741857" className="text-[var(--bright-blue)] hover:underline">+251 944 741 857</a> / <a href="tel:+251713184474" className="text-[var(--bright-blue)] hover:underline">+251 713 184 474</a>.
               </p>
             </details>
           </div>
@@ -745,17 +745,17 @@ export default function Page() {
         <div className="glow-climax-bg" />
 
         <div className="section-shell relative z-10 text-center max-w-4xl space-y-6 sm:space-y-8">
-          <span className="eyebrow">Have a good one?</span>
+          <span className="eyebrow">Discuss a project</span>
           <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-none text-[var(--text-primary)]">
-            Let&apos;s make<br /><em>it real.</em>
+            Software built for<br /><em>your business.</em>
           </h2>
           <p className="text-base sm:text-xl md:text-2xl text-[var(--text-secondary)] max-w-xl mx-auto leading-relaxed pt-2">
-            Tell us what you&apos;re building, what problem you&apos;re solving, and where you are today.
+            Tell us about your organization, the operational challenges you&apos;re facing, and what you need the software to do.
           </p>
 
           <div className="pt-4 sm:pt-6">
             <a href="mailto:hello@mellasoftware.com" className="btn-primary btn-lg text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-5 w-full sm:w-auto justify-center">
-              Start a project <ArrowUpRight className="w-5 h-5" />
+              Discuss a project <ArrowUpRight className="w-5 h-5" />
             </a>
           </div>
 
@@ -784,7 +784,7 @@ export default function Page() {
               <img src="/blue icon.svg" alt="Mella Emblem" className="brand-icon" />
               <span>Mella<span className="text-[#2563FF]">.</span></span>
             </a>
-            <p className="text-[var(--text-muted)]">Make the next thing.</p>
+            <p className="text-[var(--text-muted)]">Software built around how your business works.</p>
           </div>
 
           <nav className="flex flex-wrap gap-8 font-medium text-sm text-[var(--text-secondary)]">

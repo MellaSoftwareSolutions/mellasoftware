@@ -10,11 +10,11 @@ const siteUrl = 'https://mellasoftware.com'
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Mella Software | Independent Software Studio',
+    default: 'Mella Software — Software Built Around How Your Business Works',
     template: '%s | Mella Software',
   },
   description:
-    'We design, build, and run software products for people with something useful to put into the world. Independent software studio based in Addis Ababa, Ethiopia.',
+    'Mella Software Solutions PLC is a software engineering company based in Addis Ababa. We design and develop custom web applications, mobile apps, and business management systems tailored to your workflows.',
   applicationName: 'Mella Software',
   authors: [{ name: 'Mella Software Solutions PLC', url: siteUrl }],
   generator: 'Next.js',
@@ -22,16 +22,16 @@ export const metadata: Metadata = {
     'Mella Software',
     'Mella Software Solutions',
     'Mella Software Solutions PLC',
-    'Software Studio Addis Ababa',
-    'Ethiopia Software Company',
+    'Software Engineering Company Addis Ababa',
     'Custom Software Development Ethiopia',
-    'Web Application Development',
-    'Mobile App Development',
+    'Web Application Developers Ethiopia',
+    'Mobile App Development Ethiopia',
+    'Business Management Systems',
+    'Clinic Management Software',
+    'School Management System ERP',
+    'Restaurant POS Software',
     'AdVouch',
-    'AI Legal Advisor',
-    'Healthcare EHR Systems',
-    'Enterprise ERP Software',
-    'Cloud Architecture',
+    'Dedicated Engineering Team Ethiopia',
   ],
   creator: 'Mella Software Solutions PLC',
   publisher: 'Mella Software Solutions PLC',
@@ -54,23 +54,23 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: siteUrl,
     siteName: 'Mella Software',
-    title: 'Mella Software | Independent Software Studio',
+    title: 'Mella Software — Software Built Around How Your Business Works',
     description:
-      'We design, build, and run software products for people with something useful to put into the world. Independent software studio based in Addis Ababa, Ethiopia.',
+      'From customer-facing applications to internal business systems, Mella designs and develops software around your workflows, requirements, and goals.',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Mella Software Solutions PLC — Make the next thing',
+        alt: 'Mella Software Solutions PLC — Software built around how your business works',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mella Software | Independent Software Studio',
+    title: 'Mella Software — Software Built Around How Your Business Works',
     description:
-      'We design, build, and run software products for people with something useful to put into the world.',
+      'From customer-facing applications to internal business systems, Mella designs and develops software around your workflows, requirements, and goals.',
     images: ['/og-image.png'],
   },
   robots: {
@@ -108,7 +108,7 @@ const jsonLd = {
       },
       image: `${siteUrl}/og-image.png`,
       description:
-        'Independent software studio designing, building, and operating high-grade digital products, custom platforms, and enterprise systems.',
+        'Software engineering company based in Addis Ababa designing, developing, and operating custom web applications, mobile apps, and business management systems.',
       priceRange: '$$',
       address: {
         '@type': 'PostalAddress',
@@ -148,18 +148,27 @@ const jsonLd = {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Custom Product Engineering',
+            name: 'Custom Web & Mobile Applications',
             description:
-              'End-to-end design, full-stack development, and production rollout of digital products.',
+              'Design and development of customer-facing applications and digital products tailored to your requirements.',
           },
         },
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Dedicated Engineering Pods',
+            name: 'Business Management Systems',
             description:
-              'Senior software developers and UI/UX designers embedded directly into client operations.',
+              'Purpose-built operational software including ERP, clinic EHR, and restaurant POS systems.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Dedicated Engineering Teams',
+            description:
+              'Direct access to senior software developers and designers working directly with your team.',
           },
         },
       ],
@@ -200,31 +209,31 @@ const jsonLd = {
           name: 'What does Mella Software Solutions PLC do?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Mella Software Solutions PLC is an independent software studio based in Addis Ababa, Ethiopia. We design, build, launch, and operate web and mobile software products for high-growth businesses, as well as proprietary in-house ventures like AdVouch.',
+            text: 'Mella Software Solutions PLC is a software engineering company based in Addis Ababa, Ethiopia. We design, build, and maintain custom web applications, mobile apps, and business management systems for organizations that need software tailored to their actual workflows.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Where is Mella Software based, and do you work internationally?',
+          name: 'Where is Mella Software based, and who do you work with?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'We are headquartered in Addis Ababa, Ethiopia (UTC+3). We partner with both local Ethiopian enterprises and international companies across Africa, Europe, North America, and the Middle East.',
+            text: 'We are headquartered in Addis Ababa, Ethiopia (UTC+3). We work with local Ethiopian businesses and international organizations that need dependable custom software engineering with direct developer communication.',
           },
         },
         {
           '@type': 'Question',
-          name: 'What software products has Mella Software built?',
+          name: 'What types of software does Mella build?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Mella built and operates AdVouch (a trusted advertising escrow marketplace at advouch.com), Mizan Net (an AI-powered legal intelligence advisor for Ethiopian law), a school management ERP, a clinic EHR platform, and a real-time restaurant POS and order dispatch system.',
+            text: 'We build customer-facing web and mobile applications as well as internal operational systems — including clinic management software (EHR), school management systems (ERP), restaurant point-of-sale (POS) platforms, legal intelligence tools, and escrow marketplaces like AdVouch.',
           },
         },
         {
           '@type': 'Question',
-          name: 'How can I work with Mella Software?',
+          name: 'How does Mella work with clients on new projects?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'You can start a project by contacting hello@mellasoftware.com or calling +251 944 741 857 / +251 713 184 474. We offer fixed-scope product builds and dedicated engineering pods.',
+            text: 'We provide direct access to the engineering team with clear project scopes and realistic timelines. Clients can work with us on defined-scope system builds or through dedicated engineering arrangements. You can contact us at hello@mellasoftware.com or call +251 944 741 857 / +251 713 184 474.',
           },
         },
       ],

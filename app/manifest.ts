@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'Mella Software Solutions PLC',
     short_name: 'Mella',
     description:
-      'We design, build, and run software products for people with something useful to put into the world.',
+      'Software built around how your business works. Custom web applications, mobile apps, and business management systems.',
     start_url: '/',
     display: 'standalone',
     background_color: '#080A0D',

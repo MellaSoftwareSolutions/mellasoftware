@@ -8,17 +8,17 @@
 
 - **Legal Entity Name**: Mella Software Solutions PLC
 - **Brand Names**: Mella Software, Mella
-- **Tagline**: Make the next thing.
-- **Corporate Mission**: We design, build, launch, and operate web and mobile software products for people with something useful to put into the world.
+- **Tagline**: Software built around how your business works.
+- **Corporate Mission**: From customer-facing applications to internal business systems, Mella designs and develops software around your workflows, requirements, and goals.
 - **Headquarters**: Addis Ababa, Ethiopia
-- **Operating Model**: Independent software product studio combining in-house venture building with high-touch client engineering partnerships.
+- **Operating Model**: Software engineering company combining in-house product development (like AdVouch) with dedicated client engineering partnerships.
 - **Official Domain**: https://mellasoftware.com
 - **GitHub Organization**: https://github.com/MellaSoftwareSolutions
 - **Contact Email**: hello@mellasoftware.com
 - **Direct Telephone**: +251 944 741 857 / +251 713 184 474
 - **Working Hours**: Monday – Friday, 09:00 – 18:00 East Africa Time (EAT / UTC+3)
 - **Languages**: English, Amharic
-- **Target Market**: Ethiopia, East Africa, Pan-African enterprises, and international clients seeking dedicated senior software engineering teams.
+- **Target Market**: Ethiopian companies, East African enterprises, and international organizations seeking software built around their actual operations.
 
 ---
 
