@@ -83,7 +83,7 @@
 - **Mobile Engineering**: Flutter, React Native, iOS, Android
 - **Backend & APIs**: Node.js, Python, Go, REST APIs, GraphQL, WebSockets
 - **Databases**: PostgreSQL, MySQL, Redis, Supabase
-- **Cloud & Infrastructure**: Docker, Nginx, Linux (VPS/Dedicated), Vercel, AWS
+- **Cloud & Infrastructure**: Docker, Nginx, Linux (VPS/Dedicated), Cloud Native, AWS
 - **AI & ML Integration**: OpenAI API, Google Gemini, Anthropic Claude, custom vector databases, RAG pipelines
 
 ---

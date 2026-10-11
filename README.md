@@ -1,7 +1,7 @@
 # Mella Software Solutions PLC
 
-> **Make the next thing.**  
-> Independent software studio based in Addis Ababa, Ethiopia. We design, build, and run software products for people with something useful to put into the world.
+> **Software built around how your business works.**  
+> Software engineering company based in Addis Ababa, Ethiopia. We design, build, and run custom web applications, mobile apps, and business management systems tailored to your workflows.
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.3-black?style=flat&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19-blue?style=flat&logo=react)](https://react.dev/)
@@ -22,7 +22,7 @@ The website features an editorial, typography-driven modern aesthetic with deep 
 - **Selected Work**: Interactive portfolio featuring flagship in-house product ([AdVouch](https://advouch.com)) and specialized client systems (Legal AI, ERP, Healthcare EHR, Hospitality POS).
 - **What We Solve**: A 2-column architectural gallery with technical blueprint pattern grid overlays and concise scenario breakdowns.
 - **Products & Partnerships**: Dual-track overview highlighting our in-house ventures and dedicated client engineering models.
-- **The Mella Method**: Four clear product development chapters (Understand → Build → Ship → Improve).
+- **How We Work**: Four clear product development chapters (Understand → Build → Deploy → Support).
 - **AdVouch Deep Dive**: In-depth case study of our live identity & advertising escrow marketplace.
 - **Contact Climax**: Direct inquiry endpoints for global partners and prospective clients.
 
@@ -36,7 +36,6 @@ The website features an editorial, typography-driven modern aesthetic with deep 
 - **Language**: [TypeScript 5.7](https://www.typescriptlang.org/)
 - **Fonts**: [Sora](https://fonts.google.com/specimen/Sora) (Google Fonts via `next/font`)
 - **Icons**: Custom inline optimized SVG iconography + Lucide
-- **Analytics**: [@vercel/analytics](https://vercel.com/analytics)
 - **Package Manager**: [pnpm](https://pnpm.io/)
 
 ---
@@ -51,7 +50,7 @@ The website features an editorial, typography-driven modern aesthetic with deep 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/DanielAbabu/mellasoftware.git
+git clone https://github.com/MellaSoftwareSolutions/mellasoftware.git
 cd mellasoftware
 ```
 
@@ -111,16 +110,11 @@ mellasoftware/
 
 ## 🌐 Deployment
 
-The application is optimized for deployment on [Vercel](https://vercel.com/):
-
-1. Push your changes to GitHub.
-2. Import the repository into your Vercel team/account.
-3. Next.js will automatically detect build settings (`pnpm build`).
-4. Set up custom production domains (e.g. `mellasoftware.com`).
+The application is production-ready for deployment on any modern cloud platform, VPS, or containerized infrastructure.
 
 ### Docker
 
-A multi-stage `Dockerfile` is included for self-hosting outside of Vercel, using the Next.js [standalone output](https://nextjs.org/docs/app/api-reference/config/next-config-js/output):
+A multi-stage `Dockerfile` is included for self-hosting with Next.js [standalone output](https://nextjs.org/docs/app/api-reference/config/next-config-js/output):
 
 ```bash
 docker build -t mellasoftware .
