@@ -559,36 +559,17 @@ p {
     linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
 }
 
-@keyframes pulse-glow {
+/* Loading Screen Smooth Opacity Animation */
+@keyframes smooth-opacity-breath {
   0%, 100% {
-    filter: drop-shadow(0 0 15px rgba(37, 99, 255, 0.45)) drop-shadow(0 0 35px rgba(37, 99, 255, 0.25));
-    transform: scale(1);
-    opacity: 0.92;
+    opacity: 0.35;
   }
   50% {
-    filter: drop-shadow(0 0 30px rgba(37, 99, 255, 0.85)) drop-shadow(0 0 60px rgba(77, 124, 255, 0.55));
-    transform: scale(1.03);
     opacity: 1;
   }
 }
 
-@keyframes text-glow {
-  0%, 100% {
-    text-shadow: 0 0 12px rgba(37, 99, 255, 0.4), 0 0 24px rgba(37, 99, 255, 0.2);
-    letter-spacing: 0.24em;
-    opacity: 0.85;
-  }
-  50% {
-    text-shadow: 0 0 22px rgba(77, 124, 255, 0.9), 0 0 45px rgba(37, 99, 255, 0.6);
-    letter-spacing: 0.28em;
-    opacity: 1;
-  }
+.animate-opacity-pulse {
+  animation: smooth-opacity-breath 1.6s ease-in-out infinite;
 }
 
-.animate-pulse-glow {
-  animation: pulse-glow 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-}
-
-.animate-text-glow {
-  animation: text-glow 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-}

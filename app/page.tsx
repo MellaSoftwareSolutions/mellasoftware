@@ -181,31 +181,25 @@ export default function Page() {
 
   return (
     <main id="top" className="relative min-h-screen bg-[var(--bg)] text-[var(--text-primary)] transition-colors duration-300 overflow-hidden">
-      {/* 0. 2-Second Glowing Splash Loader */}
+      {/* 0. 2-Second Smooth Breathing Splash Loader (Above all pages including nav) */}
       <div 
         aria-hidden={!isLoading}
-        className={`fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#080A0D] transition-opacity duration-700 pointer-events-none ${
+        className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[#080A0D] transition-opacity duration-700 pointer-events-none ${
           isLoading ? 'opacity-100' : 'opacity-0'
         }`}
       >
-        <div className="flex flex-col items-center justify-center space-y-6">
-          <div className="relative flex items-center justify-center">
-            {/* Ambient Radial Blue Glow */}
-            <div className="absolute w-44 h-44 rounded-full bg-[#2563FF]/25 blur-3xl pointer-events-none" />
-            <img 
-              src="/blue icon.svg" 
-              alt="Mella Emblem" 
-              className="w-16 h-16 sm:w-20 sm:h-20 animate-pulse-glow relative z-10" 
-            />
-          </div>
-          <div className="flex flex-col items-center text-center space-y-2">
-            <h2 className="text-sm sm:text-base font-mono uppercase tracking-[0.26em] text-[#F5F7FA] animate-text-glow font-semibold">
-              Mella Software Solutions
-            </h2>
-            <div className="w-12 h-[2px] bg-gradient-to-r from-transparent via-[#2563FF] to-transparent" />
-          </div>
+        <div className="flex flex-col items-center justify-center space-y-5 animate-opacity-pulse">
+          <img 
+            src="/blue icon.svg" 
+            alt="Mella Emblem" 
+            className="w-16 h-16 sm:w-20 sm:h-20 object-contain" 
+          />
+          <h2 className="text-base sm:text-xl font-bold font-sans tracking-wide text-[#F5F7FA]">
+            Mella Software Solutions
+          </h2>
         </div>
       </div>
+
 
       {/* 1. Floating Island Header Navigation */}
       <header className="site-header">
