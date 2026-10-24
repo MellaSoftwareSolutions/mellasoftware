@@ -55,16 +55,16 @@ run:
 # Domains to expose through the reverse proxy(optional)
 # Add as many domains as needed
 domains:
-  - host: mellasoftware.org
-    port: 3033
-    tls: true
+  # - host: mellasoftware.org
+  #   port: 3033
+  #   tls: true
 
 
 proxy:
   #leave empty if you don't want to use a reverse proxy
-  provider: Nginx
+  # provider: Nginx
 
 tls:
   #leave empty if you don't want to use TLS
-  provider: letsencrypt
-  email: "mellasoftwaresolutions@gmail.com"
+  # provider: letsencrypt
+  # email: "mellasoftwaresolutions@gmail.com"
